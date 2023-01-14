@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>No Attention is Needed: Grouped Spatial-temporal Shift for Simple and Efficient Video Restorer</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <style>
+  .section-title {
+    font-family: "monospace"
+  }
+  .authors {
+    font-family: "monospace";
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: "monospace";
+  }
+  </style>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 style="font-family: Lato;">No Attention is Needed: Grouped Spatial-temporal Shift for Simple and Efficient Video Restorers</h2->
+            <h4 style="color:#5a6268;">arXiv 2022</h4>
+            <hr>
+            <h6> <a href="https://dasongli1.github.io/" target="_blank">Dasong Li</a><sup>1</sup>, 
+                Xiaoyu Shi<sup>1</sup>, Yi Zhang<sup>1</sup>, Xiaogang Wang<sup>1, 3</sup>, Hongwei Qin<sup>2</sup>,
+                <a href="https://www.ee.cuhk.edu.hk/~hsli/" target="_blank">Hongsheng Li</a><sup>1, 3</sup></h6>
+            <p>
+                <sup>1</sup>The Chinese University of Hong Kong &nbsp;&nbsp;
+                <sup>2</sup>SenseTime Research &nbsp;&nbsp;  <br>
+                <sup>3</sup>Centre for Perceptual and Interactive Intelligence Limited &nbsp;&nbsp; 
+                </p>
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2206.10810" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/dasongli1/grouped_shift_net" role="button"  target="_blank">
+                    <i class="fa fa-github-alt"></i> Code</a> </p>
+              </div>
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zjueducn-my.sharepoint.com/:f:/g/personal/pengsida_zju_edu_cn/Eo9zn4x_xcZKmYHZNjzel7gBdWf_d4m-pISHhPWB-GZBYw?e=Hf4mz7" role="button">
+                    <i class="fa fa-database"></i> Data</a> </p>
+              </div> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          <p class="text-justify">Video restoration, aiming at restoring clear frames from degraded videos, has been attracting increasing attention. Video restoration is required to establish the temporal correspondences from multiple misaligned frames. To achieve that end, existing deep methods generally adopt complicated network architectures, such as integrating optical flow, deformable convolution, cross-frame or cross-pixel self-attention layers, resulting in expensive computational cost. We argue that with proper design, temporal information utilization in video restoration can be much more efficient and effective. In this study, we propose a simple, fast yet effective framework for video restoration. The key of our framework is the grouped spatial-temporal shift, which is simple and lightweight, but can implicitly establish inter-frame correspondences and achieve multi-frame aggregation. Coupled with basic 2D U-Nets for frame-wise encoding and decoding, such an efficient spatial-temporal shift module can effectively tackle the challenges in video restoration. Extensive experiments show that our framework surpasses previous state-of-the-art method with <a style="color: #e83015;">43%</a> of its computational cost on both video deblurring and video denoising. 
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Performance</h3>
+            <img class="img-fluid" src="images/comparison0.png" alt="comparison" width="70%">
+            <p>PSNR-Params-FLOPS comparisons with other state-of-the-art methods on video deblurring
+(Left) and video denoising (Right). Our tiny (-T), small (-S) and base models occupy top-left corners, indicating superior
+performance with higher efficiency. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Video Demo</h3>
+            <!-- <iframe width="560" height="315" src="https://youtu.be/7uySpKoz4Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4RkqF2VMjnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <p class="text-justify">
+              We provide a video comparison of our proposed grouped shift-Net with those of VRT on the GoPro dataset.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Method</h3>
+            <hr style="margin-top:0px">
+                <img class="img-fluid" src="images/featured.png" alt="method" width="80%">
+          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Motivation</p>
+             <p class="text-justify">
+              Video restoration, by nature, requires aggregating information from the temporal dimension. Two decisive functionalities and challenges of video restoration are alignment and information aggregation across frames. The keys of various video restoration network lie in how to design different network components to realize the two functionalities. For inter-frame alignment, most previous video restoration methods resort to explicit alignment to establish temporal correspondences across frames, such as using optical flow and deformable convolution. However, using such techniques incurs more computational cost and memory consumption. They might also fail in the scenarios of large displacements, noise, and blurry regions. Several methods utilize convolutional networks to fuse multiple frames without explicit inter-frame alignment, which generally show poorer performances. Information aggregation across frames is mostly dominated by recurrent frameworks. However, the misalignments and faulty prediction can be accumulated across time and the methods are usually difficult to be parallelized for efficient inference. Recently, transformer architectures emerge as promising alternatives. Video restoration transformer (VRT) is proposed for modeling long-range dependency with attention mechanism. Nevertheless, VRT has a very large number of self-attention layers and is computationally costly.
+          </p>
+          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Overall framework</p>
+             <p class="text-justify">
+              In this study, we propose a simple, fast, and effective spatial-temporal shift module to implicitly model temporal correspondences across time. We introduce Group Shift-Net, which is equipped with the proposed spatial-temporal shift module for alignment and basic 2D U-Nets as the frame-wise encoder and decoder. Such a simple yet effective framework is able to model long-term dependency without utilizing resource-demanding optical flow estimation, deformable convolution, recurrent methods, or temporal transformers. Our Group Shift-Net adopts a three-stage design: 1) frame-wise pre-restoration, 2) multi-frame fusion with grouped spatial-temporal shift, and 3) frame-wise restoration.
+          </p>
+          <img class="img-fluid" src="images/network.png" alt="architecture" width="80%">
+          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Network Architecture</p>
+             <p class="text-justify">
+              For the network of frame-wise pre-restoration of stage 1 and final restoration of stage 3, it is observed that a single U-Net-like structure cannot restore the frames well. Instead, we propose to stack N 2D slim U-Nets consecutively to conduct frame-wise restoration effectively. 
+              In multi-frame fusion, each frame-wise feature is to be fully aggregated with neighboring features to obtain the temporally aligned and fused features.  we stack multiple GSTS blocks (e.g., 6) to effectively establish temporal correspondences and conduct multi-frame fusion. A GSTS block consists of three components: 1) a temporal shift operation, 2) a spatial shift operation, and 3) a lightweight fusion layer.
+          </p>
+
+          <p class="text-justify">
+              Our contributions of this study are two-fold: 
+              <li style="text-align: left;font-family: Lato;">We propose a simple, fast, yet effective framework with a newly introduced grouped spatial-temporal shift, made for video restoration, which achieves efficient temporal feature alignment and aggregation when coupled with only basic 2D convolution blocks.</li> 
+              <li style="text-align: left;font-family: Lato;">The proposed framework achieves state-of-the-art performances with much fever FLOPs on both video deblurring and video denoising tasks, demonstrating its generalization capability.</li>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Compared with Other Methods</h3>
+            <hr style="margin-top:0px">
+                <img class="img-fluid" src="images/comparison1.png" alt="comparison" width="70%">
+          <p>Quantitative comparison with state-of-the-art video deblurring methods on GoPro. </p>
+                <img class="img-fluid" src="images/comparison2.png" alt="comparison" width="70%">
+          <p>Quantitative comparison with state-of-the-art video denoising methods on Set8. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Qualitative Results</h3>
+            <hr style="margin-top:0px">
+                <img class="img-fluid" src="images/qualitative_result1.png" alt="comparison1" width="70%">
+          <p>
+              Video deblurring results on GoPro dataset. Our method recovers more details than other methods.
+          </p>
+                <img class="img-fluid" src="images/qualitative_result2.png" alt="comparison2" width="70%">
+          <p>
+              Video denoising results on Set8. Our method achieves better performances at reconstructing details such as textures and lines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- citing -->
+  <!-- <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@inproceedings{huang2021vs-net,
+  title={VS-Net: Voting with Segmentation for Visual Localization},
+  author={Huang, Zhaoyang and Zhou, Han and Li, Yijin and Yang, Bangbang and Xu, Yan and Zhou, Xiaowei and Bao, Hujun and Zhang, Guofeng and Li, Hongsheng},
+  booktitle={CVPR},
+  year={2021}
+}</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div> -->
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
