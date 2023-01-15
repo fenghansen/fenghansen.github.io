@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>No Attention is Needed: Grouped Spatial-temporal Shift for Simple and Efficient Video Restorer</title>
+    <title>Learnability Enhancement for Low-light Raw Denoising: A Data Perspective</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -81,7 +81,7 @@
             SNA improves the precision of data mapping by increasing the data volume, and DSC reduces the complexity of data mapping by reducing the noise complexity.
             To improve the data quality, we finally propose a new image acquisition protocol and dataset with high learnability.
             Extensive experiments on public datasets and our dataset demonstrate the superiority of our learnability enhancement strategy on low-light raw image denoising. 
-          <img class="img-fluid" src="images/teaser.pdf" alt="teaser" width="50%">
+          <img class="img-fluid" src="./images/teaser.pdf" alt="teaser" width="50%">
           <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
           <p class="text-justify">
             Our main contributions are summarized as follows:
@@ -106,12 +106,12 @@
           <h3>Method</h3>
             <hr style="margin-top:0px">
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
-            <img class="img-fluid" src="images/nfm.pdf" alt="method" width="70%">
+            <img class="img-fluid" src="./images/nfm.pdf" alt="method" width="70%">
             <p class="text-justify">
               Overview of simplified imaging pipeline. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
             </p>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Framework</p>
-            <img class="img-fluid" src="images/pipeline.pdf" alt="architecture" width="90%">
+            <img class="img-fluid" src="./images/pipeline.pdf" alt="architecture" width="90%">
             <p class="text-justify">
               Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
             </p>
@@ -126,16 +126,16 @@
         <div class="col-12 text-center">
             <h3>Performance</h3>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Quantitative Results</p>
-            <img class="img-fluid" src="images/comparison0.png" width="90%">
+            <img class="img-fluid" src="./images/comparison0.png" width="90%">
             <p class="text-justify">
               Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
             </p>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
-            <img class="img-fluid" src="images/ablation.pdf" width="90%">
+            <img class="img-fluid" src="./images/ablation.pdf" width="90%">
             <p class="text-justify">
               Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
             </p>
-            <img class="img-fluid" src="images/ablation.png" width="90%">
+            <img class="img-fluid" src="./images/ablation.png" width="90%">
             <p class="text-justify">
               Representative visual result comparison of different data schemes. Our full learnability enhancement strategy (Paired + SNA + DSC) promotes more exact color and clearer details compared to other baselines.
             </p>
@@ -144,94 +144,6 @@
       </div>
     </div>
   </section>
-  <!-- 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h3>Video Demo</h3>
-            <iframe width="560" height="315" src="https://youtu.be/7uySpKoz4Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4RkqF2VMjnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             <p class="text-justify">
-              We provide a video comparison of our proposed grouped shift-Net with those of VRT on the GoPro dataset.
-            </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Method</h3>
-            <hr style="margin-top:0px">
-                <img class="img-fluid" src="images/featured.png" alt="method" width="80%">
-          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Motivation</p>
-             <p class="text-justify">
-              Video restoration, by nature, requires aggregating information from the temporal dimension. Two decisive functionalities and challenges of video restoration are alignment and information aggregation across frames. The keys of various video restoration network lie in how to design different network components to realize the two functionalities. For inter-frame alignment, most previous video restoration methods resort to explicit alignment to establish temporal correspondences across frames, such as using optical flow and deformable convolution. However, using such techniques incurs more computational cost and memory consumption. They might also fail in the scenarios of large displacements, noise, and blurry regions. Several methods utilize convolutional networks to fuse multiple frames without explicit inter-frame alignment, which generally show poorer performances. Information aggregation across frames is mostly dominated by recurrent frameworks. However, the misalignments and faulty prediction can be accumulated across time and the methods are usually difficult to be parallelized for efficient inference. Recently, transformer architectures emerge as promising alternatives. Video restoration transformer (VRT) is proposed for modeling long-range dependency with attention mechanism. Nevertheless, VRT has a very large number of self-attention layers and is computationally costly.
-          </p>
-          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Overall framework</p>
-             <p class="text-justify">
-              In this study, we propose a simple, fast, and effective spatial-temporal shift module to implicitly model temporal correspondences across time. We introduce Group Shift-Net, which is equipped with the proposed spatial-temporal shift module for alignment and basic 2D U-Nets as the frame-wise encoder and decoder. Such a simple yet effective framework is able to model long-term dependency without utilizing resource-demanding optical flow estimation, deformable convolution, recurrent methods, or temporal transformers. Our Group Shift-Net adopts a three-stage design: 1) frame-wise pre-restoration, 2) multi-frame fusion with grouped spatial-temporal shift, and 3) frame-wise restoration.
-          </p>
-          <img class="img-fluid" src="images/network.png" alt="architecture" width="80%">
-          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Network Architecture</p>
-             <p class="text-justify">
-              For the network of frame-wise pre-restoration of stage 1 and final restoration of stage 3, it is observed that a single U-Net-like structure cannot restore the frames well. Instead, we propose to stack N 2D slim U-Nets consecutively to conduct frame-wise restoration effectively. 
-              In multi-frame fusion, each frame-wise feature is to be fully aggregated with neighboring features to obtain the temporally aligned and fused features.  we stack multiple GSTS blocks (e.g., 6) to effectively establish temporal correspondences and conduct multi-frame fusion. A GSTS block consists of three components: 1) a temporal shift operation, 2) a spatial shift operation, and 3) a lightweight fusion layer.
-          </p>
-
-          <p class="text-justify">
-              Our contributions of this study are two-fold: 
-              <li style="text-align: left;font-family: Lato;">We propose a simple, fast, yet effective framework with a newly introduced grouped spatial-temporal shift, made for video restoration, which achieves efficient temporal feature alignment and aggregation when coupled with only basic 2D convolution blocks.</li> 
-              <li style="text-align: left;font-family: Lato;">The proposed framework achieves state-of-the-art performances with much fever FLOPs on both video deblurring and video denoising tasks, demonstrating its generalization capability.</li>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Compared with Other Methods</h3>
-            <hr style="margin-top:0px">
-                <img class="img-fluid" src="images/comparison1.png" alt="comparison" width="70%">
-          <p>Quantitative comparison with state-of-the-art video deblurring methods on GoPro. </p>
-                <img class="img-fluid" src="images/comparison2.png" alt="comparison" width="70%">
-          <p>Quantitative comparison with state-of-the-art video denoising methods on Set8. </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Qualitative Results</h3>
-            <hr style="margin-top:0px">
-                <img class="img-fluid" src="images/qualitative_result1.png" alt="comparison1" width="70%">
-          <p>
-              Video deblurring results on GoPro dataset. Our method recovers more details than other methods.
-          </p>
-                <img class="img-fluid" src="images/qualitative_result2.png" alt="comparison2" width="70%">
-          <p>
-              Video denoising results on Set8. Our method achieves better performances at reconstructing details such as textures and lines.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
--->
-
-
-
-
-
-
 
   <!-- citing -->
   <!-- <div class="container">
