@@ -30,32 +30,36 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 style="font-family: Lato;">No Attention is Needed: Grouped Spatial-temporal Shift for Simple and Efficient Video Restorers</h2->
-            <h4 style="color:#5a6268;">arXiv 2022</h4>
+            <h2 style="font-family: Lato;">Learnability Enhancement for Low-light Raw Denoising: A Data Perspective</h2->
+            <h4 style="color:#5a6268;">ACMMM 2022 (Best Paper Runner-Up Award) / TPAMI (Under Review)</h4>
             <hr>
-            <h6> <a href="https://dasongli1.github.io/" target="_blank">Dasong Li</a><sup>1</sup>, 
-                Xiaoyu Shi<sup>1</sup>, Yi Zhang<sup>1</sup>, Xiaogang Wang<sup>1, 3</sup>, Hongwei Qin<sup>2</sup>,
-                <a href="https://www.ee.cuhk.edu.hk/~hsli/" target="_blank">Hongsheng Li</a><sup>1, 3</sup></h6>
+            <h6> <a href="https://fenghansen.github.io/" target="_blank">Hansen Feng</a><sup>1</sup>, 
+              <a href="https://wang-lizhi.github.io/" target="_blank"></a>Lizhi Wang<sup>1</sup>, 
+                Yuzhi Wang<sup>2</sup>, Haoqiang Fan<sup>2</sup>, Hua Huang<sup>3</sup>
+            </h6>
             <p>
-                <sup>1</sup>The Chinese University of Hong Kong &nbsp;&nbsp;
-                <sup>2</sup>SenseTime Research &nbsp;&nbsp;  <br>
-                <sup>3</sup>Centre for Perceptual and Interactive Intelligence Limited &nbsp;&nbsp; 
+                <sup>1</sup>Beijing Institute of Technology &nbsp;&nbsp;
+                <sup>2</sup>Megvii Technology &nbsp;&nbsp;  <br>
+                <sup>3</sup>Beijing Normal University &nbsp;&nbsp; 
                 </p>
             <div class="row justify-content-center">
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2206.10810" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> Paper</a> </p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2207.06103" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper (ACMMM)</a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/dasongli1/grouped_shift_net" role="button"  target="_blank">
-                    <i class="fa fa-github-alt"></i> Code</a> </p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN" role="button"  target="_blank">
+                    <i class="fa fa-github-alt"></i> Code (ACMMM)</a> </p>
               </div>
-              <!-- <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zjueducn-my.sharepoint.com/:f:/g/personal/pengsida_zju_edu_cn/Eo9zn4x_xcZKmYHZNjzel7gBdWf_d4m-pISHhPWB-GZBYw?e=Hf4mz7" role="button">
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN/tree/TPAMI" role="button"  target="_blank">
+                  <i class="fa fa-github-alt"></i> Code (TPAMI)</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl " role="button">
                     <i class="fa fa-database"></i> Data</a> </p>
-              </div> -->
+              </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -70,8 +74,26 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-          <p class="text-justify">Video restoration, aiming at restoring clear frames from degraded videos, has been attracting increasing attention. Video restoration is required to establish the temporal correspondences from multiple misaligned frames. To achieve that end, existing deep methods generally adopt complicated network architectures, such as integrating optical flow, deformable convolution, cross-frame or cross-pixel self-attention layers, resulting in expensive computational cost. We argue that with proper design, temporal information utilization in video restoration can be much more efficient and effective. In this study, we propose a simple, fast yet effective framework for video restoration. The key of our framework is the grouped spatial-temporal shift, which is simple and lightweight, but can implicitly establish inter-frame correspondences and achieve multi-frame aggregation. Coupled with basic 2D U-Nets for frame-wise encoding and decoding, such an efficient spatial-temporal shift module can effectively tackle the challenges in video restoration. Extensive experiments show that our framework surpasses previous state-of-the-art method with <a style="color: #e83015;">43%</a> of its computational cost on both video deblurring and video denoising. 
-        </div>
+          <p class="text-justify">Low-light raw image denoising is an important and valuable task in computational photography where learning-based methods trained with paired real data are mainstream.
+            However, the limited data volume, complicated noise distribution, and underdeveloped data quality have constituted the learnability bottleneck of paired real data, which limits the denoising performance of learning-based methods.
+            To break through the bottleneck, we introduce a learnability enhancement strategy for low-light raw image denoising from a data perspective. We reform paired real data and image acquisition protocol according to noise modeling.
+            Our strategy includes two efficient techniques: shot noise augmentation (SNA) and dark shading correction (DSC).
+            SNA improves the precision of data mapping by increasing the data volume, and DSC reduces the complexity of data mapping by reducing the noise complexity.
+            To improve the data quality, we finally propose a new image acquisition protocol and dataset with high learnability.
+            Extensive experiments on public datasets and our dataset demonstrate the superiority of our learnability enhancement strategy on low-light raw image denoising. 
+          <img class="img-fluid" src="images/teaser.pdf" alt="teaser" width="50%">
+          <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
+          <p class="text-justify">
+            Our main contributions are summarized as follows:
+            <ol>
+              <li style="text-align: left;font-family: Lato;">We light the idea of learnability enhancement for low-light raw image denoising by reforming paired real data according to the noise model.</li> 
+              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel shot noise augmentation method, which promotes the precision of data mapping through decoupling the real noise into shot noise and read noise.</li>
+              <li style="text-align: left;font-family: Lato;">We reduce the complexity of the real noise model with a novel dark shading correction method, which reduces the complexity of data mapping through decoupling the read noise into temporal stable noise and temporal variant noise.</li>
+              <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol and collect a low-light raw image denoising dataset, which promotes the reliability of data mapping through improving the data quality on paired real data.</li>
+              <li style="text-align: left;font-family: Lato;">We demonstrate the superior performance of our methods on public datasets and our dataset in both quantitative results and visual quality.</li>
+            <ol>
+          </p>
+          </div>
       </div>
     </div>
   </section>
@@ -81,11 +103,18 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-            <h3>Performance</h3>
-            <img class="img-fluid" src="images/comparison0.png" alt="comparison" width="70%">
-            <p>PSNR-Params-FLOPS comparisons with other state-of-the-art methods on video deblurring
-(Left) and video denoising (Right). Our tiny (-T), small (-S) and base models occupy top-left corners, indicating superior
-performance with higher efficiency. </p>
+          <h3>Method</h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
+            <img class="img-fluid" src="images/nfm.pdf" alt="method" width="70%">
+            <p class="text-justify">
+              Overview of simplified imaging pipeline. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
+            </p>
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Framework</p>
+            <img class="img-fluid" src="images/pipeline.pdf" alt="architecture" width="90%">
+            <p class="text-justify">
+              Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
+            </p>
         </div>
       </div>
     </div>
@@ -95,8 +124,33 @@ performance with higher efficiency. </p>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
+            <h3>Performance</h3>
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Quantitative Results</p>
+            <img class="img-fluid" src="images/comparison0.png" width="90%">
+            <p class="text-justify">
+              Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
+            </p>
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
+            <img class="img-fluid" src="images/ablation.pdf" width="90%">
+            <p class="text-justify">
+              Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
+            </p>
+            <img class="img-fluid" src="images/ablation.png" width="90%">
+            <p class="text-justify">
+              Representative visual result comparison of different data schemes. Our full learnability enhancement strategy (Paired + SNA + DSC) promotes more exact color and clearer details compared to other baselines.
+            </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
             <h3>Video Demo</h3>
-            <!-- <iframe width="560" height="315" src="https://youtu.be/7uySpKoz4Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <iframe width="560" height="315" src="https://youtu.be/7uySpKoz4Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4RkqF2VMjnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              <p class="text-justify">
               We provide a video comparison of our proposed grouped shift-Net with those of VRT on the GoPro dataset.
@@ -171,7 +225,7 @@ performance with higher efficiency. </p>
       </div>
     </div>
   </section>
-
+-->
 
 
 
