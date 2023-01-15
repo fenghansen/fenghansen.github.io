@@ -81,7 +81,7 @@
             SNA improves the precision of data mapping by increasing the data volume, and DSC reduces the complexity of data mapping by reducing the noise complexity.
             To improve the data quality, we finally propose a new image acquisition protocol and dataset with high learnability.
             Extensive experiments on public datasets and our dataset demonstrate the superiority of our learnability enhancement strategy on low-light raw image denoising. 
-          <iframe class="img-fluid" src="./images/teaser.pdf" alt="teaser" width="50%">
+          <iframe class="img-fluid" src="./images/teaser.pdf" alt="teaser" width="50%"></iframe>
           <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
           <p class="text-justify">
             Our main contributions are summarized as follows:
@@ -106,12 +106,12 @@
           <h3>Method</h3>
             <hr style="margin-top:0px">
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
-            <iframe class="img-fluid" src="./images/nfm.pdf" alt="method" width="70%">
+            <iframe class="img-fluid" src="./images/nfm.pdf" alt="method" width="70%"></iframe>
             <p class="text-justify">
               Overview of simplified imaging pipeline. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
             </p>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Framework</p>
-            <iframe class="img-fluid" src="./images/pipeline.pdf" alt="architecture" width="90%">
+            <iframe class="img-fluid" src="./images/pipeline.pdf" alt="architecture" width="90%"></iframe>
             <p class="text-justify">
               Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
             </p>
