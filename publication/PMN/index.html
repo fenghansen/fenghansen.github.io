@@ -50,6 +50,10 @@
                     <i class="fa fa-file"></i> Paper (ACMMM)</a> </p>
               </div>
               <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2207.06103" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper (TPAMI, Coming soon)</a> </p>
+              </div>
+              <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN" role="button"  target="_blank">
                     <i class="fa fa-github"></i> Code (ACMMM)</a> </p>
               </div>
@@ -57,13 +61,13 @@
                 <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN/tree/TPAMI" role="button"  target="_blank">
                   <i class="fa fa-github"></i> Code (TPAMI)</a> </p>
               </div>
-              <div class="column">
+              <!-- <div class="column">
                 <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.bilibili.com/video/BV1pG411E7mE/" role="button">
                   <i class="fa fa-youtube-play"></i> Presentation</a> </p>
-              </div>
+              </div> -->
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl " role="button">
-                    <i class="fa fa-cloud-download"></i> Data</a> </p>
+                    <i class="fa fa-cloud-download"></i> Dataset</a> </p>
               </div>
             </div>
           </div>
@@ -80,13 +84,14 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-          <p class="text-justify">Low-light raw image denoising is an important and valuable task in computational photography where learning-based methods trained with paired real data are mainstream.
-            However, the limited data volume, complicated noise distribution, and underdeveloped data quality have constituted the learnability bottleneck of paired real data, which limits the denoising performance of learning-based methods.
-            To break through the bottleneck, we introduce a learnability enhancement strategy for low-light raw image denoising from a data perspective. We reform paired real data and image acquisition protocol according to noise modeling.
-            Our strategy includes two efficient techniques: shot noise augmentation (SNA) and dark shading correction (DSC).
-            SNA improves the precision of data mapping by increasing the data volume, and DSC reduces the complexity of data mapping by reducing the noise complexity.
-            To improve the data quality, we finally propose a new image acquisition protocol and dataset with high learnability.
-            Extensive experiments on public datasets and our dataset demonstrate the superiority of our learnability enhancement strategy on low-light raw image denoising. 
+          <p class="text-justify">Low-light raw image denoising is an essential task in computational photography, to which the learning-based method has become the mainstream solution. 
+            The standard paradigm of the learning-based method is to learn the mapping between the paired real data, i.e., the low-light noisy image and its clean counterpart. 
+            However, the limited data volume, complicated noise model, and underdeveloped data quality have constituted the learnability bottleneck of the data mapping between paired real data, which limits the performance of the learning-based method. 
+            To break through the bottleneck, we introduce a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling. 
+            Our learnability enhancement strategy integrates three efficient methods: shot noise augmentation (SNA), dark shading correction (DSC) and a developed image acquisition protocol. 
+            Specifically, SNA promotes the precision of data mapping by increasing the data volume of paired real data, DSC promotes the accuracy of data mapping by reducing the noise complexity, and the developed image acquisition protocol promotes the reliability of data mapping by improving the data quality of paired real data. 
+            Meanwhile, based on the developed image acquisition protocol, we build a new dataset for low-light raw image denoising. 
+            Experiments on public datasets and our dataset demonstrate the superiority of the learnability enhancement strategy. 
           </p>
         </div>
       </div>
@@ -105,10 +110,10 @@
             <p class="text-justify">
             Our main contributions are summarized as follows:
             <ol>
-              <li style="text-align: left;font-family: Lato;">We light the idea of learnability enhancement for low-light raw image denoising by reforming paired real data according to the noise model.</li> 
-              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel shot noise augmentation method, which promotes the precision of data mapping through decoupling the real noise into shot noise and read noise.</li>
-              <li style="text-align: left;font-family: Lato;">We reduce the complexity of the real noise model with a novel dark shading correction method, which reduces the complexity of data mapping through decoupling the read noise into temporal stable noise and temporal variant noise.</li>
-              <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol and collect a low-light raw image denoising dataset, which promotes the reliability of data mapping through improving the data quality on paired real data.</li>
+              <li style="text-align: left;font-family: Lato;">We light the idea of learnability enhancement for low-light raw image denoising by reforming paired real data according to the noise modeling from a data perspective.</li> 
+              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel shot noise augmentation method, which promotes the precision of data mapping by data augmentation.</li>
+              <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel dark shading correction method, which promotes the accuracy of data mapping by noise decoupling.</li>
+              <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol and build a low-light raw image denoising dataset, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
               <li style="text-align: left;font-family: Lato;">We demonstrate the superior performance of our methods on public datasets and our dataset in both quantitative results and visual quality.</li>
             <ol>
           </p>
@@ -126,7 +131,7 @@
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
             <img class="img-fluid" src="./images/noise_formation_model.png" alt="method" width="60%">
             <p class="text-justify">
-              Overview of simplified imaging pipeline. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
+              Overview of simplified imaging pipeline and our noise modeling. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
             </p>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Framework</p>
             <img class="img-fluid" src="./images/pipeline.png" alt="method" width="100%">
@@ -185,7 +190,6 @@
     <br>
       <p style="text-align:center;font-size:small;">
         Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template. <br>
-        本站总访问量<span id="busuanzi_value_site_pv"></span>次<br>
         本站访客数<span id="busuanzi_value_site_uv"></span>人次<br>
         本文总阅读量<span id="busuanzi_value_page_pv"></span>次
       </p>
