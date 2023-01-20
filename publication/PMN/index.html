@@ -93,6 +93,7 @@
             Meanwhile, based on the developed image acquisition protocol, we build a new dataset for low-light raw image denoising. 
             Experiments on public datasets and our dataset demonstrate the superiority of the learnability enhancement strategy. 
           </p>
+          <!-- <img class="img-fluid" src="./images/pipeline.png" alt="teaser" width="90%"> -->
         </div>
       </div>
     </div>
@@ -105,15 +106,19 @@
         <div class="col-12 text-center">
           <h3>Introduction</h3>
             <hr style="margin-top:0px">
-            <img class="img-fluid" src="./images/teaser.png" alt="teaser" width="50%">
             <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
             <p class="text-justify">
             Our main contributions are summarized as follows:
             <ol>
               <li style="text-align: left;font-family: Lato;">We light the idea of learnability enhancement for low-light raw image denoising by reforming paired real data according to the noise modeling from a data perspective.</li> 
-              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel shot noise augmentation method, which promotes the precision of data mapping by data augmentation.</li>
-              <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel dark shading correction method, which promotes the accuracy of data mapping by noise decoupling.</li>
-              <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol and build a low-light raw image denoising dataset, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
+              <img class="img-fluid" src="./images/teaser.png" alt="teaser" width="456">
+              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel Shot Noise Augmentation (SNA) method, which promotes the precision of data mapping by data augmentation.</li>
+              <img class="img-fluid" src="./images/SNA.jpg" alt="SNA" width="706">
+              <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel Dark Shading Correction (DSC) method, which promotes the accuracy of data mapping by noise decoupling.</li>
+              <img class="img-fluid" src="./images/DSC.jpg" alt="DSC" width="706">
+              <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol and build a Low-light Raw Image Denoising (LRID) dataset, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
+              <img class="img-fluid" src="./images/GT_pipeline.jpg" alt="dst_show">
+              <img class="img-fluid" src="./images/dataset_show.jpg" alt="dst_show" width="715">
               <li style="text-align: left;font-family: Lato;">We demonstrate the superior performance of our methods on public datasets and our dataset in both quantitative results and visual quality.</li>
             <ol>
           </p>
@@ -129,7 +134,7 @@
           <h3>Method</h3>
             <hr style="margin-top:0px">
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
-            <img class="img-fluid" src="./images/noise_formation_model.png" alt="method" width="60%">
+            <img class="img-fluid" src="./images/noise_formation_model.png" alt="method" width="700">
             <p class="text-justify">
               Overview of simplified imaging pipeline and our noise modeling. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
             </p>
@@ -150,16 +155,16 @@
             <h3>Performance</h3>
             <hr style="margin-top:0px">
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Quantitative Results</p>
-            <img class="img-fluid" src="./images/comparison0.png" width="100%">
+            <img class="img-fluid" src="./images/results_tab.png" width="100%">
             <p class="text-justify">
-              Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
+              Quantitative results (PSNR/SSIM) of different methods on the ELD dataset, SID dataset, and our LRID dataset. The red color indicates the best results and the blue color indicates the second-best results.
             </p>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
             <img class="img-fluid" src="./images/ablation_tab.png" width="100%">
             <p class="text-justify">
               Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
             </p>
-            <img class="img-fluid" src="./images/ablation.png" width="100%">
+            <img class="img-fluid" src="./images/ablation_fig.png" width="100%">
             <p class="text-justify">
               Representative visual result comparison of different data schemes. ``*" indicates that the module uses the implementation from the preliminary version. Our full learnability enhancement strategy (Paired + SNA + DSC) promotes more exact color and clearer details compared to other baselines.
             </p>
