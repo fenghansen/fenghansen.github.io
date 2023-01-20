@@ -109,18 +109,18 @@
           <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
           <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Contributions</p>
           <p class="text-justify">
-            <b>Our main contributions are summarized as follows:</b>
+            Our main contributions are summarized as follows:
             <ol>
-              <li style="text-align: left;font-family: Lato;">We light the idea of <mark>learnability enhancement</mark> for low-light raw image denoising by reforming paired real data according to the noise modeling from a data perspective.</li> 
+              <li style="text-align: left;font-family: Lato;">We light the idea of <b>learnability enhancement</b> for low-light raw image denoising by reforming paired real data according to the noise modeling from a data perspective.</li> 
               <img class="img-fluid" src="./images/teaser.png" alt="teaser" width="456">
               <br><br> 
-              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel <mark>Shot Noise Augmentation (SNA)</mark> method, which promotes the precision of data mapping by data augmentation.</li>
+              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel <b>Shot Noise Augmentation (SNA)</b> method, which promotes the precision of data mapping by data augmentation.</li>
               <img class="img-fluid" src="./images/SNA.jpg" alt="SNA" width="706">
               <br><br> 
-              <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel <mark>Dark Shading Correction (DSC)</mark> method, which promotes the accuracy of data mapping by noise decoupling.</li>
+              <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel <b>Dark Shading Correction (DSC)</b> method, which promotes the accuracy of data mapping by noise decoupling.</li>
               <img class="img-fluid" src="./images/DSC.jpg" alt="DSC" width="706">
               <br><br> 
-              <li style="text-align: left;font-family: Lato;">We develop a high-quality <mark>image acquisition protocol</mark> and build a <mark>Low-light Raw Image Denoising (LRID) dataset</mark>, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
+              <li style="text-align: left;font-family: Lato;">We develop a high-quality <b>image acquisition protocol</b> and build a <b>Low-light Raw Image Denoising (LRID) dataset</b>, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
               <!-- <img class="img-fluid" src="./images/GT_pipeline.jpg" alt="dst_show"> -->
               <img class="img-fluid" src="./images/dataset_show.jpg" alt="dst_show" width="715">
               <br><br> 
@@ -208,6 +208,7 @@
               <h5>Pipeline</h5>
               <img class="img-fluid" src="./images/GT_pipeline.jpg">
               <p class="text-justify">Our ground truth estimation pipeline. We first preprocess each input raw image, and then fuse multiple frames as output.</p>
+              <br>
               <h5>Results</h5>
               <img class="img-fluid" src="./images/GT_merge.png", width="722">
               <p class="text-justify">
@@ -234,6 +235,7 @@
             <p class="text-justify">
               Quantitative results (PSNR/SSIM) of different methods on the ELD dataset, SID dataset, and our LRID dataset. The red color indicates the best results and the blue color indicates the second-best results.
             </p>
+            <br>
             <h5>Public Datasets (ELD & SID)</h5>
             <img class="img-fluid" src="./images/results_ELD.png" width="100%">
             <br><br>
@@ -247,6 +249,7 @@
               The paired real data, despite containing real noise, is so fragile in learnability that the denoising model cannot learn the precise and accurate data mapping, resulting in blurry results and color bias. 
               By applying the learnability enhancement strategy to the paired real data, the denoising performance is significantly improved in both quantitative results and visual quality. Our work performs clean denoising results with the clearest texture and the most exact colors. 
             </p>
+            <br>
             <h5>Our Dataset (LRID)</h5>
             <img class="img-fluid" src="./images/results_ours.png" width="100%">
             <p class="text-justify">
@@ -265,11 +268,13 @@
               Our ablation studies of noise diversity and scene diversity show that data quality improves with an increasing number of noisy images per scene and an increasing percentage of scenes. 
               The increase of data quality gradually saturates when the number of noisy images is close to our value, indicating that our dataset has sufficient noise diversity and scene diversity.
             </p>
+            <br>
             <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/ablation_tab.png" >
             <p class="text-justify">
               Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
             </p>
+            <br>
             <h5>Visual Results</h5>
             <img class="img-fluid" src="./images/ablation_fig.png">
             <p class="text-justify">
@@ -303,7 +308,8 @@
               This approximation algorithm can effectively avoid extra errors in the quantization process while maintaining the original computational complexity.
             </p>
             <h5>Quantitative Results</h5>
-            <img class="img-fluid" src="./images/DSC+NM.png">
+            <img class="img-fluid" src="./images/DSC+NM.png">  
+            <br>  
             <h5>Visual Results</h5>
             <img class="img-fluid" src="./images/discussion_DSC+NM.png">
             <p class="text-justify">
@@ -321,10 +327,12 @@
               Dark shading calibrated by different cameras leads to different denoising performances, however, their quantitative results are close, which is still significantly higher than previous works. 
               This comparison demonstrates the high consistency of dark shading calibrated by different cameras with the same sensor, which indicates that our DSC is feasible under the above configuration.
             </p>
+            <br>
             <h5>Dark Shading on Different Sensors</h5>
             <img class="img-fluid" src="./images/discussion_camera.png" width="60%">
             <p class="text-justify">According to our observation, dark shading with noticeable patterns widely exists in sensors of various mainstream sensors. 
               The sensors widely used on smartphones and surveillance cameras also contain noticeable dark shading, which indicates that our DSC is indispensable.</p>
+            <br>
             <h5>Limitations</h5>
             <p class="text-justify">
               1. Overheating will cause the DSC to be less effective, while the neural network is robust to dark shading differences within normal operating temperatures. <br> 
