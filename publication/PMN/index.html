@@ -112,13 +112,17 @@
             <ol>
               <li style="text-align: left;font-family: Lato;">We light the idea of learnability enhancement for low-light raw image denoising by reforming paired real data according to the noise modeling from a data perspective.</li> 
               <img class="img-fluid" src="./images/teaser.png" alt="teaser" width="456">
+              <br><br> 
               <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel Shot Noise Augmentation (SNA) method, which promotes the precision of data mapping by data augmentation.</li>
               <img class="img-fluid" src="./images/SNA.jpg" alt="SNA" width="706">
+              <br><br> 
               <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel Dark Shading Correction (DSC) method, which promotes the accuracy of data mapping by noise decoupling.</li>
               <img class="img-fluid" src="./images/DSC.jpg" alt="DSC" width="706">
+              <br><br> 
               <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol and build a Low-light Raw Image Denoising (LRID) dataset, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
               <img class="img-fluid" src="./images/GT_pipeline.jpg" alt="dst_show">
               <img class="img-fluid" src="./images/dataset_show.jpg" alt="dst_show" width="715">
+              <br><br> 
               <li style="text-align: left;font-family: Lato;">We demonstrate the superior performance of our methods on public datasets and our dataset in both quantitative results and visual quality.</li>
             <ol>
           </p>
@@ -136,11 +140,13 @@
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
             <img class="img-fluid" src="./images/noise_formation_model.png" alt="method" width="700">
             <p class="text-justify">
+              <br> 
               Overview of simplified imaging pipeline and our noise modeling. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
             </p>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Framework</p>
             <img class="img-fluid" src="./images/pipeline.png" alt="method" width="100%">
             <p class="text-justify">
+              <br> 
               Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
             </p>
         </div>
@@ -154,19 +160,101 @@
         <div class="col-12 text-center">
             <h3>Performance</h3>
             <hr style="margin-top:0px">
-            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Quantitative Results</p>
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Comparison</p>
+            <!-- <p class="text-justify" style="font-size: large; font-weight: 400;">Quantitative Results</p> -->
+            <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/results_tab.png" width="100%">
             <p class="text-justify">
               Quantitative results (PSNR/SSIM) of different methods on the ELD dataset, SID dataset, and our LRID dataset. The red color indicates the best results and the blue color indicates the second-best results.
             </p>
+            <h5>Public Datasets (ELD & SID)</h5>
+            <img class="img-fluid" src="./images/results_ELD.png" width="100%">
+            <br><br>
+            <img class="img-fluid" src="./images/results_SID.png" width="100%">
+            <p class="text-justify">
+              <br> 
+              Denoising models trained with synthetic data are unable to completely remove complicated real noise. 
+              P-G is far from the real noise model, resulting in limited performance. 
+              ELD considers more noise sources but still deviates from the real noise model, resulting in color bias and residual noise. 
+              Although SFRN sampled real read noise, the patch-wise method cannot inherently address the mapping dilemma caused by dark shading, resulting in residual FPN. 
+              The paired real data, despite containing real noise, is so fragile in learnability that the denoising model cannot learn the precise and accurate data mapping, resulting in blurry results and color bias. 
+              By applying the learnability enhancement strategy to the paired real data, the denoising performance is significantly improved in both quantitative results and visual quality. Our work performs clean denoising results with the clearest texture and the most exact colors. 
+            </p>
+            <h5>Our Dataset (LRID)</h5>
+            <img class="img-fluid" src="./images/results_ours.png" width="100%">
+            <p class="text-justify">
+              <br> 
+              Our methods demonstrate superior denoising performance on our dataset, with the clearest texture and most exact colors. The performance aligns with our results on public datasets, indicating the high generalizability of our methods. 
+              <br>
+              On our dataset, paired real data generally outperforms the best synthetic data (SFRN), which indicates that the data quality of synthetic data is inferior to that of paired real data on our dataset. This result differs from the findings of other noise modeling studies on public datasets. We attribute this discrepancy to the fact that our image acquisition protocol has addressed various data flaws. When data is well-annotated (i.e., the ground truth is clean and well-aligned) and sufficient in quantity, the learnability of data mapping is well-guaranteed. Under these conditions, the data quality of paired real data should surpass that of synthetic data. The observation indicates the superiority of our dataset.
+            </p>
+
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
-            <img class="img-fluid" src="./images/ablation_tab.png" width="100%">
+            <h5>Data Diversity of Dataset</h5>
+            <img class="img-fluid" src="./images/dataset_ablation.png">
+            <p class="text-justify">
+              Our ablation studies of noise diversity and scene diversity show that data quality improves with an increasing number of noisy images per scene and an increasing percentage of scenes. 
+              The increase of data quality gradually saturates when the number of noisy images is close to our value, indicating that our dataset has sufficient noise diversity and scene diversity.
+            </p>
+            <h5>Quantitative Results</h5>
+            <img class="img-fluid" src="./images/ablation_tab.png" >
             <p class="text-justify">
               Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
             </p>
-            <img class="img-fluid" src="./images/ablation_fig.png" width="100%">
+            <h5>Visual Results</h5>
+            <img class="img-fluid" src="./images/ablation_fig.png">
             <p class="text-justify">
               Representative visual result comparison of different data schemes. ``*" indicates that the module uses the implementation from the preliminary version. Our full learnability enhancement strategy (Paired + SNA + DSC) promotes more exact color and clearer details compared to other baselines.
+              <br><br>
+              Overall, the best performance is achieved using the complete learnability enhancement strategy. SNA focuses on promoting mapping precision, while DSC focuses on promoting mapping precision. The combination of these two modules results in the best performance in both quantitative and visual quality. Benefiting from the development of SNA and DSC, our learnability enhancement strategy successfully refreshes the state-of-the-art in our preliminary work
+            </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Discussion</h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Extension of DSC on Noise Modeling</p>
+            <p class="text-justify">
+              Dark shading, the comprehensive modeling of temporal stable noise, is also an extension of physical-based noise modeling. 
+              The extended application of DSC on noise modeling can significantly improve the performance of existing noise modeling methods.
+              In general, if the original noise model does not adequately consider the temporal stable noise model, the quantitative results of the developed noise model will be significantly improved.
+              <br>
+              It is worthwhile to be highlighted that SFRN requires High-Bit Recovery~(HBR) to work, however, HBR and DSC conflict in implementation.
+              To address this conflict between DSC and HBR, we propose a novel approximation algorithm.
+              This approximation algorithm can effectively avoid extra errors in the quantization process while maintaining the original computational complexity.
+            </p>
+            <h5>Quantitative Results</h5>
+            <img class="img-fluid" src="./images/DSC+NM.png">
+            <h5>Visual Results</h5>
+            <img class="img-fluid" src="./images/discussion_DSC+NM.png">
+            <p class="text-justify">
+              <br> 
+              The noise modeling method corrected by DSC results in a more realistic noise model, leading to a high denoising performance. DSC brings significant improvements to noise modeling methods in quantitative results on various datasets.
+              Compared with the noise model without DSC, DSC promotes denoised images with fewer artifacts and more exact colors. Our extensive experiments demonstrate the potential widespread usage of our methods.
+            </p>
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Generalizability</p>
+            <!-- <p class="text-justify" style="font-size: large; font-weight: 400;">Quantitative Results</p> -->
+            <h5>Dark Shading on Cameras with Same Sensor</h5>
+            <img class="img-fluid" src="./images/discussion_sensor.png">
+            <p class="text-justify">
+              Dark shading calibrated by different cameras leads to different denoising performances, however, their quantitative results are close, which is still significantly higher than previous works. 
+              This comparison demonstrates the high consistency of dark shading calibrated by different cameras with the same sensor, which indicates that our DSC is feasible under the above configuration.
+            </p>
+            <h5>Dark Shading on Different Sensors</h5>
+            <img class="img-fluid" src="./images/discussion_camera.png" width="60%">
+            <p class="text-justify">According to our observation, dark shading with noticeable patterns widely exists in sensors of various mainstream sensors. 
+              The sensors widely used on smartphones and surveillance cameras also contain noticeable dark shading, which indicates that our DSC is indispensable.</p>
+            <h5>Limitations</h5>
+            <p class="text-justify">
+              1. Overheating will cause the DSC to be less effective, while the neural network is robust to dark shading differences within normal operating temperatures. <br> 
+              2. To prevent the parameters of dark shading from being inappropriate due to sensor circuit switching, it is necessary to calibrate dark shading according to different circuits.
             </p>
         </div>
         
