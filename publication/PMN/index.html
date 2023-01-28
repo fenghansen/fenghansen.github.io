@@ -66,7 +66,7 @@
                   <i class="fa fa-youtube-play"></i> Presentation</a> </p>
               </div> -->
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg" role="button">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl" role="button">
                     <i class="fa fa-cloud-download"></i> Dataset</a> </p>
               </div>
             </div>
@@ -134,7 +134,7 @@
             <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol to improve the data quality of paired real data. Based on the protocol, we build a low-light raw image denoising dataset, which promotes the reliability of data mapping.</li> 
             <li style="text-align: left;font-family: Lato;">We analyze the property of SNA and extend the application strategy based on the real read noise samples. The extended design can promote denoised images with clear details.</li>
             <li style="text-align: left;font-family: Lato;">We develop the linear dark shading model and present an in-depth analysis of the robustness and generalizability of DSC. We further explore the extension of DSC on physics-based noise modeling, which brings huge denoising performance improvements.</li>
-            <li style="text-align: left;font-family: Lato;">We evaluate our methods on more datasets and conduct more extensive experiments to show the potential widespread usage of our methods</li>
+            <li style="text-align: left;font-family: Lato;">We evaluate our methods on more datasets and conduct more extensive experiments to show the potential widespread usage of our methods.</li>
           </ol>
           <!-- </details> -->
         </div>
@@ -229,12 +229,12 @@
             <h3>Performance</h3>
             <hr style="margin-top:0px">
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Comparison</p>
-            <details><summary>Click to get details</summary>
             <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/results_tab.png" width="100%">
             <p class="text-justify">
               Quantitative results (PSNR/SSIM) of different methods on the ELD dataset, SID dataset, and our LRID dataset. The red color indicates the best results and the blue color indicates the second-best results.
             </p>
+            <details><summary>Click to get details</summary>
             <br>
             <h5>Public Datasets (ELD & SID)</h5>
             <img class="img-fluid" src="./images/results_ELD.png" width="100%">
@@ -261,19 +261,12 @@
             </details>
             <br>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
-            <details><summary>Click to get details</summary>
-            <h5>Data Diversity of Dataset</h5>
-            <img class="img-fluid" src="./images/dataset_ablation.png">
-            <p class="text-justify">
-              Our ablation studies of noise diversity and scene diversity show that data quality improves with an increasing number of noisy images per scene and an increasing percentage of scenes. 
-              The increase of data quality gradually saturates when the number of noisy images is close to our value, indicating that our dataset has sufficient noise diversity and scene diversity.
-            </p>
-            <br>
             <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/ablation_tab.png" >
             <p class="text-justify">
               Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
             </p>
+            <details><summary>Click to get details</summary>
             <br>
             <h5>Visual Results</h5>
             <img class="img-fluid" src="./images/ablation_fig.png">
@@ -281,6 +274,13 @@
               Representative visual result comparison of different data schemes. ``*" indicates that the module uses the implementation from the preliminary version. Our full learnability enhancement strategy (Paired + SNA + DSC) promotes more exact color and clearer details compared to other baselines.
               <br><br>
               Overall, the best performance is achieved using the complete learnability enhancement strategy. SNA focuses on promoting mapping precision, while DSC focuses on promoting mapping precision. The combination of these two modules results in the best performance in both quantitative and visual quality. Benefiting from the development of SNA and DSC, our learnability enhancement strategy successfully refreshes the state-of-the-art in our preliminary work
+            </p>
+            <br>
+            <h5>Data Diversity of Our Dataset</h5>
+            <img class="img-fluid" src="./images/dataset_ablation.png">
+            <p class="text-justify">
+              Our ablation studies of noise diversity and scene diversity show that data quality improves with an increasing number of noisy images per scene and an increasing percentage of scenes. 
+              The increase of data quality gradually saturates when the number of noisy images is close to our value, indicating that our dataset has sufficient noise diversity and scene diversity.
             </p>
             </details>
         </div>
@@ -297,6 +297,8 @@
             <h3>Discussion</h3>
             <hr style="margin-top:0px">
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Extension of DSC on Noise Modeling</p>
+            <h5>Quantitative Results</h5>
+            <img class="img-fluid" src="./images/DSC+NM.png">  
             <details><summary>Click to get details</summary>
             <p class="text-justify">
               Dark shading, the comprehensive modeling of temporal stable noise, is also an extension of physical-based noise modeling. 
@@ -307,8 +309,6 @@
               To address this conflict between DSC and HBR, we propose a novel approximation algorithm.
               This approximation algorithm can effectively avoid extra errors in the quantization process while maintaining the original computational complexity.
             </p>
-            <h5>Quantitative Results</h5>
-            <img class="img-fluid" src="./images/DSC+NM.png">  
             <br>  
             <h5>Visual Results</h5>
             <img class="img-fluid" src="./images/discussion_DSC+NM.png">
