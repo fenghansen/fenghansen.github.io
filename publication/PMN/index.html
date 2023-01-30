@@ -33,7 +33,7 @@
         <div class="row">
           <div class="col-12">
             <h1 style="font-family: Lato;">Learnability Enhancement for Low-light Raw Denoising: <br> A Data Perspective</h1>
-            <h4 style="color:#5a6268;">ACMMM 2022 (Best Paper Runner-Up Award) / TPAMI (Under Review)</h4>
+            <h4 style="color:#5a6268;">TPAMI (Under Review) / ACMMM 2022 (Best Paper Runner-Up Award)</h4>
             <hr>
             <h5> <a href="https://fenghansen.github.io/" target="_blank">Hansen Feng</a><sup>1</sup>, 
               <a href="https://wang-lizhi.github.io/" target="_blank">Lizhi Wang</a><sup>1</sup>, 
@@ -46,28 +46,24 @@
             </p>
             <div class="row justify-content-center">
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2207.06103" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> Paper (ACMMM)</a> </p>
+                <p class="mb-5"><a class="btn btn-large btn-light" href="./MM2TPAMI_2023-01-18.pdf" role="button"  target="_blank">
+                  <i class="fa fa-file"></i> Paper (TPAMI)</a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="./MM2TPAMI_2023-01-18.pdf" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> Paper (TPAMI)</a> </p>
-              </div>
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN" role="button"  target="_blank">
-                    <i class="fa fa-github"></i> Code (ACMMM)</a> </p>
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2207.06103" role="button"  target="_blank">
+                  <i class="fa fa-file"></i> Paper (MM)</a> </p>
               </div>
               <div class="column">
                 <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN/tree/TPAMI" role="button"  target="_blank">
                   <i class="fa fa-github"></i> Code (TPAMI)</a> </p>
               </div>
-              <!-- <div class="column">
-                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.bilibili.com/video/BV1pG411E7mE/" role="button">
-                  <i class="fa fa-youtube-play"></i> Presentation</a> </p>
-              </div> -->
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN" role="button"  target="_blank">
+                  <i class="fa fa-github"></i> Code (MM)</a> </p>
+              </div>
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl" role="button">
-                    <i class="fa fa-cloud-download"></i> Dataset</a> </p>
+                    <i class="fa fa-cloud-download"></i> Dataset (TPAMI)</a> </p>
               </div>
             </div>
           </div>
@@ -107,7 +103,7 @@
           <h3>Introduction</h3>
           <hr style="margin-top:0px">
           <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
-          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Contributions</p>
+          <!-- <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Contributions</p> -->
           <p class="text-justify">
             Our main contributions are summarized as follows:
             <ol>
@@ -128,14 +124,14 @@
             </ol>
           </p>
           <br>
-          <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;"> Summary of Differences</p>
+          <!-- <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;"> Summary of Differences</p> -->
           <!-- <details><summary>Click to get details</summary> -->
-          <ol>
+          <!-- <ol>
             <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol to improve the data quality of paired real data. Based on the protocol, we build a low-light raw image denoising dataset, which promotes the reliability of data mapping.</li> 
             <li style="text-align: left;font-family: Lato;">We analyze the property of SNA and extend the application strategy based on the real read noise samples. The extended design can promote denoised images with clear details.</li>
             <li style="text-align: left;font-family: Lato;">We develop the linear dark shading model and present an in-depth analysis of the robustness and generalizability of DSC. We further explore the extension of DSC on physics-based noise modeling, which brings huge denoising performance improvements.</li>
             <li style="text-align: left;font-family: Lato;">We evaluate our methods on more datasets and conduct more extensive experiments to show the potential widespread usage of our methods.</li>
-          </ol>
+          </ol> -->
           <!-- </details> -->
         </div>
       </div>
@@ -299,6 +295,7 @@
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Extension of DSC on Noise Modeling</p>
             <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/DSC+NM.png">  
+            <p class="text-justify"> The quantitative comparison of noise models with or without DSC on various datasets. </p>
             <details><summary>Click to get details</summary>
             <p class="text-justify">
               Dark shading, the comprehensive modeling of temporal stable noise, is also an extension of physical-based noise modeling. 
