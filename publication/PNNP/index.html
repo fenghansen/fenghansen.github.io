@@ -32,7 +32,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 style="font-family: Lato;">Learnability Enhancement for Low-light Raw Denoising: <br> A Data Perspective</h1>
+            <h1 style="font-family: Lato;">Physics-guided Noise Neural Proxy for Low-light Raw Image Denoising</h1>
             <h4 style="color:#5a6268;">IJCV (Under Review)</h4>
             <hr>
             <h5> <a href="https://fenghansen.github.io/" target="_blank">Hansen Feng</a><sup>1</sup>, 
@@ -46,24 +46,12 @@
             </p>
             <div class="row justify-content-center">
               <div class="column">
-                <p class="mb-5"><a class="btn btn-large btn-light" href="./MM2TPAMI_2023-01-18.pdf" role="button"  target="_blank">
-                  <i class="fa fa-file"></i> Paper (TPAMI)</a> </p>
-              </div>
-              <div class="column">
-                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2207.06103" role="button"  target="_blank">
-                  <i class="fa fa-file"></i> Paper (MM)</a> </p>
-              </div>
-              <div class="column">
                 <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN/tree/TPAMI" role="button"  target="_blank">
-                  <i class="fa fa-github"></i> Code (TPAMI)</a> </p>
-              </div>
-              <div class="column">
-                <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/megvii-research/PMN" role="button"  target="_blank">
-                  <i class="fa fa-github"></i> Code (MM)</a> </p>
+                  <i class="fa fa-github"></i> Code </a> </p>
               </div>
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl" role="button">
-                    <i class="fa fa-cloud-download"></i> Dataset (TPAMI)</a> </p>
+                    <i class="fa fa-cloud-download"></i> Checkpoints</a> </p>
               </div>
             </div>
           </div>
@@ -72,15 +60,15 @@
     </div>
   </section>
 
-
   <!-- abstract -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Abstract</h3>
+          <h3>Evaluation Guidelines</h3>
             <hr style="margin-top:0px">
-          <p class="text-justify">Low-light raw image denoising plays a crucial role in mobile photography, and learning-based methods have become the mainstream approach. Training the learning-based methods with synthetic data emerges as an efficient and practical alternative to paired real data. However, the quality of synthetic data is inherently limited by the low accuracy of the noise model, which decreases the performance of low-light raw image denoising. In this paper, we develop a novel framework for accurate noise modeling that learns a physics-guided noise neural proxy (PNNP) from dark frames. PNNP integrates three efficient techniques: physics-guided noise decoupling (PND), physics-guided proxy model (PPM), and differentiable distribution-oriented loss (DDL). The PND decouples the dark frame into different components and handles different levels of noise in a flexible manner, which reduces the complexity of the noise neural proxy. The PPM incorporates physical priors to effectively constrain the generated noise, which promotes the accuracy of  the noise neural proxy. The DDL provides explicit and reliable supervision for noise modeling, which promotes the precision of the noise neural proxy. Extensive experiments on public low-light raw image denoising datasets and real low-light imaging scenarios demonstrate the superior performance of our PNNP framework. 
+          <p class="text-justify">
+            Coming soon... (ETA: 2023-08-04)
           </p>
           <!-- <img class="img-fluid" src="./images/pipeline.png" alt="teaser" width="90%"> -->
         </div>
@@ -89,122 +77,16 @@
   </section>
   <br>
 
+  <!-- abstract -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Introduction</h3>
-          <hr style="margin-top:0px">
-          <p class="text-justify">From the data perspective, image denoising via learning-based methods can be modeled as a data mapping from the noisy image to the clean image. The learnability of data mapping depends on the complexity of noise distribution, the volume of paired data, and the quality of labeled data. Accordingly, we develop a learnability enhancement strategy for low-light raw image denoising by reforming paired real data according to noise modeling.</p>
-          <!-- <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Contributions</p> -->
-          <p class="text-justify">
-            Our main contributions are summarized as follows:
-            <ol>
-              <li style="text-align: left;font-family: Lato;">We light the idea of <b>learnability enhancement</b> for low-light raw image denoising by reforming paired real data according to the noise modeling from a data perspective.</li> 
-              <img class="img-fluid" src="./images/teaser.png" alt="teaser" width="456">
-              <br><br> 
-              <li style="text-align: left;font-family: Lato;">We increase the data volume of paired real data with a novel <b>Shot Noise Augmentation (SNA)</b> method, which promotes the precision of data mapping by data augmentation.</li>
-              <img class="img-fluid" src="./images/SNA.jpg" alt="SNA" width="706">
-              <br><br> 
-              <li style="text-align: left;font-family: Lato;">We reduce the noise complexity with a novel <b>Dark Shading Correction (DSC)</b> method, which promotes the accuracy of data mapping by noise decoupling.</li>
-              <img class="img-fluid" src="./images/DSC.jpg" alt="DSC" width="706">
-              <br><br> 
-              <li style="text-align: left;font-family: Lato;">We develop a high-quality <b>image acquisition protocol</b> and build a <b>Low-light Raw Image Denoising (LRID) dataset</b>, which promotes the reliability of data mapping by improving the data quality of paired real data.</li>
-              <!-- <img class="img-fluid" src="./images/GT_pipeline.jpg" alt="dst_show"> -->
-              <img class="img-fluid" src="./images/dataset_show.jpg" alt="dst_show" width="715">
-              <br><br> 
-              <li style="text-align: left;font-family: Lato;">We demonstrate the superior performance of our methods on public datasets and our dataset in both quantitative results and visual quality.</li>
-            </ol>
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          <p class="text-justify">Low-light raw image denoising plays a crucial role in mobile photography, and learning-based methods have become the mainstream approach. Training the learning-based methods with synthetic data emerges as an efficient and practical alternative to paired real data. However, the quality of synthetic data is inherently limited by the low accuracy of the noise model, which decreases the performance of low-light raw image denoising. In this paper, we develop a novel framework for accurate noise modeling that learns a physics-guided noise neural proxy (PNNP) from dark frames. PNNP integrates three efficient techniques: physics-guided noise decoupling (PND), physics-guided proxy model (PPM), and differentiable distribution-oriented loss (DDL). The PND decouples the dark frame into different components and handles different levels of noise in a flexible manner, which reduces the complexity of the noise neural proxy. The PPM incorporates physical priors to effectively constrain the generated noise, which promotes the accuracy of  the noise neural proxy. The DDL provides explicit and reliable supervision for noise modeling, which promotes the precision of the noise neural proxy. Extensive experiments on public low-light raw image denoising datasets and real low-light imaging scenarios demonstrate the superior performance of our PNNP framework.
           </p>
-          <br>
-          <!-- <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;"> Summary of Differences</p> -->
-          <!-- <details><summary>Click to get details</summary> -->
-          <!-- <ol>
-            <li style="text-align: left;font-family: Lato;">We develop a high-quality image acquisition protocol to improve the data quality of paired real data. Based on the protocol, we build a low-light raw image denoising dataset, which promotes the reliability of data mapping.</li> 
-            <li style="text-align: left;font-family: Lato;">We analyze the property of SNA and extend the application strategy based on the real read noise samples. The extended design can promote denoised images with clear details.</li>
-            <li style="text-align: left;font-family: Lato;">We develop the linear dark shading model and present an in-depth analysis of the robustness and generalizability of DSC. We further explore the extension of DSC on physics-based noise modeling, which brings huge denoising performance improvements.</li>
-            <li style="text-align: left;font-family: Lato;">We evaluate our methods on more datasets and conduct more extensive experiments to show the potential widespread usage of our methods.</li>
-          </ol> -->
-          <!-- </details> -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Method</h3>
-            <hr style="margin-top:0px">
-            <p class="text-justify">
-              The limited data volume and complicated noise model are two of the main culprits that lead to the fragile learnability of paired real data.
-              However, addressing these problems is challenging since the real noise model in paired real data is a ``black box".
-              <br> We propose a data augmentation method (SNA) to increase the data volume. The data augmentation utilizes the additive property of the shot noise model, i.e., Poisson distribution.
-              <br> We propose a noise decoupling method (DSC) to reduce the noise complexity. The noise decoupling splits the read noise model into simple forms, i.e., temporal stable dark shading and temporal variant read noise.
-              <br> Our learnability enhancement strategy addresses the limited data volume and complicated noise model while preserving the real noise model, thereby enhancing the learnability of data mapping.
-            </p>
-            <details><summary>Click to get details</summary>
-            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Noise Formation Model</p>
-            <img class="img-fluid" src="./images/noise_formation_model.png" alt="method" width="700">
-            <p class="text-justify">
-              <br> 
-              Overview of simplified imaging pipeline and our noise modeling. Photons are converted into charge and sequentially voltages, then amplified, and finally quantized into digital signals. We visualize the noise and connect it with the corresponding noise sources. Noise-free scene irradiance suffers inescapable photon shot noise and read noise from various electronic components, thus the output of the sensor is a noisy image.
-            </p>
-            <br>
-            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Framework</p>
-            <img class="img-fluid" src="./images/pipeline.png" alt="method" width="100%">
-            <p class="text-justify">
-              <br> 
-              Overview of our framework. For training, we first correct the dark shading hiding in the noisy raw image by DSC. Then we augment the clean image and the noisy image to obtain new data pairs by SNA. Finally, We use augmented noisy images and augmented clean images to train a neural network. For inference, we just denoise the noisy image after correcting dark shading with the trained denoising model.
-            </p>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Dataset</h3>
-            <hr style="margin-top:0px">
-            <p class="text-justify">
-              The underdeveloped data quality is also one of the culprits for the fragile learnability of data mapping between the paired real data.
-		          The underdevelopment is reflected in four data flaws: spatial misalignment, intensity misalignment, noisy ground truth, and insufficient diversity, leading to incorrect data mapping, biased data mapping, poor convergence performance, and overfitting denoising models, respectively.
-              <br>
-              Existing denoising datasets suffer from significant problems with at least one of these flaws. As a result, the existing datasets are difficult to meet the needs of low-light denoising from a data perspective.
-		          Our motivation is to develop the image acquisition protocol and build a high-quality dataset for low-light raw image denoising from a data perspective. 
-            </p>
-            <details><summary>Click to get details</summary>
-              <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Image Acquisition Protocol</p>
-              <p class="text-justify">
-                <b>[MetaInfo]:</b> We build a high-quality dataset using the Redmi K30 smartphone with the IMX686 sensor. The Low-light Raw Image Denoising~(LRID) dataset contains 138 scenes, including 82 indoor and 56 outdoor scenes, with a total of 5754 images.
-                <br> <b>[Setup]:</b> We first captured 25 long-exposure images at ISO-100 and immediately captured several groups of short-exposure images at ISO-6400. Finally, a pair of long-exposure images before and after the original ISP of the smartphone is captured for real-world low-light image enhancement. We use a program to remotely control the smartphone, and the interval of image acquisition is very short (about 0.01s per frame), which means that misalignment between short-exposure frames is negligible.
-                <br> <b>[Indoor Scenes]:</b> The indoor scenes are captured in enclosed spaces with various color temperatures and illumination setups. There are five groups of short-exposure images for each scene, and the exposure time ratios of long- and short-exposure images are 64, 128, 256, 512, and 1024, respectively. The total exposure time of the long-exposure images is about 25s.
-                <br> <b>[Outdoor Scenes]:</b> The outdoor scenes are captured at midnight with the calm wind (within 0.5m/s). There are three groups of short-exposure images for each scene, and the exposure time ratios of the long- and short-exposure images are 64, 128, and 256, respectively. The total exposure time of the long-exposure images is about 64s.
-                <br><br>
-                <b>
-                  Our image acquisition protocol is superior due to addressing four data flaws that affect learnability.
-		              The maximum total exposure time and minimum exposure time are limited by spatial alignment (Section 4.1.1) and intensity alignment (Section 4.1.2), respectively. The image capture setup of long-exposure images and short-exposure images are designed for clean ground truth (Section 4.1.3) and sufficient diversity (Section 4.1.4), respectively.
-                </b>
-              </p>
-              <br>
-              <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ground Truth Estimation</p>
-              <h5>Pipeline</h5>
-              <img class="img-fluid" src="./images/GT_pipeline.jpg">
-              <p class="text-justify">Our ground truth estimation pipeline. We first preprocess each input raw image, and then fuse multiple frames as output.</p>
-              <br>
-              <h5>Results</h5>
-              <img class="img-fluid" src="./images/GT_merge.png", width="722">
-              <p class="text-justify">
-                <br> 
-                Results in the confidence-based multi-frame fusion processing. The blue region represents the confidence masks. The green region represents the fusion results without alignment. The yellow region represents the fusion results with alignment. The final result of our ground truth estimation is ``Ours" with alignment.
-              </p>
-            </details>
+          <!-- <img class="img-fluid" src="./images/pipeline.png" alt="teaser" width="90%"> -->
         </div>
       </div>
     </div>
@@ -231,45 +113,29 @@
             <img class="img-fluid" src="./images/results_SID.png" width="100%">
             <p class="text-justify">
               <br> 
-              Denoising models trained with synthetic data are unable to completely remove complicated real noise. 
-              P-G is far from the real noise model, resulting in limited performance. 
-              ELD considers more noise sources but still deviates from the real noise model, resulting in color bias and residual noise. 
-              Although SFRN sampled real read noise, the patch-wise method cannot inherently address the mapping dilemma caused by dark shading, resulting in residual FPN. 
-              The paired real data, despite containing real noise, is so fragile in learnability that the denoising model cannot learn the precise and accurate data mapping, resulting in blurry results and color bias. 
-              By applying the learnability enhancement strategy to the paired real data, the denoising performance is significantly improved in both quantitative results and visual quality. Our work performs clean denoising results with the clearest texture and the most exact colors. 
+              Our method achieves the most exact color and clearest textures in the majority of scenarios in public datasets. Benefiting from accurate noise neural proxies, the corresponding denoising results are exempt from obvious residual noise and effectively remove various complex noises including fixed-pattern noise. 
             </p>
             <br>
-            <h5>Our Dataset (LRID)</h5>
+            <h5>Real Imaging Scenarios</h5>
             <img class="img-fluid" src="./images/results_ours.png" width="100%">
-            <p class="text-justify">
-              <br> 
-              Our methods demonstrate superior denoising performance on our dataset, with the clearest texture and most exact colors. The performance aligns with our results on public datasets, indicating the high generalizability of our methods. 
-              <br>
-              On our dataset, paired real data generally outperforms the best synthetic data (SFRN), which indicates that the data quality of synthetic data is inferior to that of paired real data on our dataset. This result differs from the findings of other noise modeling studies on public datasets. We attribute this discrepancy to the fact that our image acquisition protocol has addressed various data flaws. When data is well-annotated (i.e., the ground truth is clean and well-aligned) and sufficient in quantity, the learnability of data mapping is well-guaranteed. Under these conditions, the data quality of paired real data should surpass that of synthetic data. The observation indicates the superiority of our dataset.
-            </p>
             </details>
             <br>
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
             <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/ablation_tab.png" >
             <p class="text-justify">
-              Ablation study of different learnability enhancement modules on the ELD dataset, SID dataset, and LRID Dataset. ``*" indicates that the module uses the implementation from the preliminary version.
+              Ablation study of different modules we proposed on noise modeling and low-light raw image denoising. The underline indicates the best results.
             </p>
             <details><summary>Click to get details</summary>
             <br>
             <h5>Visual Results</h5>
             <img class="img-fluid" src="./images/ablation_fig.png">
             <p class="text-justify">
-              Representative visual result comparison of different data schemes. ``*" indicates that the module uses the implementation from the preliminary version. Our full learnability enhancement strategy (Paired + SNA + DSC) promotes more exact color and clearer details compared to other baselines.
-              <br><br>
-              Overall, the best performance is achieved using the complete learnability enhancement strategy. SNA focuses on promoting mapping precision, while DSC focuses on promoting mapping precision. The combination of these two modules results in the best performance in both quantitative and visual quality. Benefiting from the development of SNA and DSC, our learnability enhancement strategy successfully refreshes the state-of-the-art in our preliminary work
+              A representative visual comparison of ablation studies on the ELD dataset. The red color indicates the best results and the blue color indicates the second-best results. (Best viewed with zoom-in)
             </p>
-            <br>
-            <h5>Data Diversity of Our Dataset</h5>
-            <img class="img-fluid" src="./images/dataset_ablation.png">
+            <img class="img-fluid" src="./images/ablation_chart.png">
             <p class="text-justify">
-              Our ablation studies of noise diversity and scene diversity show that data quality improves with an increasing number of noisy images per scene and an increasing percentage of scenes. 
-              The increase of data quality gradually saturates when the number of noisy images is close to our value, indicating that our dataset has sufficient noise diversity and scene diversity.
+              A distribution comparison of ablation studies on pixel-wise noise at ISO-1600. Each subfigure consists of two parts: the left part shows a comparison of the probability density functions, while the right part shows the probability plot. The blue histogram represents the distribution of real pixel-wise noise, while the orange histogram represents the distribution of synthetic noise. The red line represents the quantiles of the real noise distribution, and the blue points represent the quantiles of the synthetic noise distribution.
             </p>
             </details>
         </div>
@@ -279,61 +145,7 @@
   </section>
   <br>
 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-            <h3>Discussion</h3>
-            <hr style="margin-top:0px">
-            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Extension of DSC on Noise Modeling</p>
-            <h5>Quantitative Results</h5>
-            <img class="img-fluid" src="./images/DSC+NM.png">  
-            <p class="text-justify"> The quantitative comparison of noise models with or without DSC on various datasets. </p>
-            <details><summary>Click to get details</summary>
-            <p class="text-justify">
-              Dark shading, the comprehensive modeling of temporal stable noise, is also an extension of physical-based noise modeling. 
-              The extended application of DSC on noise modeling can significantly improve the performance of existing noise modeling methods.
-              In general, if the original noise model does not adequately consider the temporal stable noise model, the quantitative results of the developed noise model will be significantly improved.
-              <br>
-              It is worthwhile to be highlighted that SFRN requires High-Bit Recovery~(HBR) to work, however, HBR and DSC conflict in implementation.
-              To address this conflict between DSC and HBR, we propose a novel approximation algorithm.
-              This approximation algorithm can effectively avoid extra errors in the quantization process while maintaining the original computational complexity.
-            </p>
-            <br>  
-            <h5>Visual Results</h5>
-            <img class="img-fluid" src="./images/discussion_DSC+NM.png">
-            <p class="text-justify">
-              <br> 
-              The noise modeling method corrected by DSC results in a more realistic noise model, leading to a high denoising performance. DSC brings significant improvements to noise modeling methods in quantitative results on various datasets.
-              Compared with the noise model without DSC, DSC promotes denoised images with fewer artifacts and more exact colors. Our extensive experiments demonstrate the potential widespread usage of our methods.
-            </p>
-            </details>
-            <br>
-            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Generalizability</p>
-            <details><summary>Click to get details</summary>
-            <h5>Dark Shading on Cameras with Same Sensor</h5>
-            <img class="img-fluid" src="./images/discussion_sensor.png">
-            <p class="text-justify">
-              Dark shading calibrated by different cameras leads to different denoising performances, however, their quantitative results are close, which is still significantly higher than previous works. 
-              This comparison demonstrates the high consistency of dark shading calibrated by different cameras with the same sensor, which indicates that our DSC is feasible under the above configuration.
-            </p>
-            <br>
-            <h5>Dark Shading on Different Sensors</h5>
-            <img class="img-fluid" src="./images/discussion_camera.png" width="60%">
-            <p class="text-justify">According to our observation, dark shading with noticeable patterns widely exists in sensors of various mainstream sensors. 
-              The sensors widely used on smartphones and surveillance cameras also contain noticeable dark shading, which indicates that our DSC is indispensable.</p>
-            <br>
-            <h5>Limitations</h5>
-            <p class="text-justify">
-              1. Overheating will cause the DSC to be less effective, while the neural network is robust to dark shading differences within normal operating temperatures. <br> 
-              2. To prevent the parameters of dark shading from being inappropriate due to sensor circuit switching, it is necessary to calibrate dark shading according to different circuits.
-            </p>
-            </details>
-        </div>
-        
-      </div>
-    </div>
-  </section>
+  
 
   <!-- citing -->
   <!-- <div class="container">
