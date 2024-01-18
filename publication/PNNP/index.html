@@ -32,8 +32,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 style="font-family: Lato;">Physics-guided Noise Neural Proxy for Low-light Raw Image Denoising</h1>
-            <h4 style="color:#5a6268;">IJCV (Under Review)</h4>
+            <h1 style="font-family: Lato;">Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising</h1>
+            <h4 style="color:#5a6268;">TPAMI (Under Review)</h4>
             <hr>
             <h5> <a href="https://fenghansen.github.io/" target="_blank">Hansen Feng</a><sup>1</sup>, 
               <a href="https://wang-lizhi.github.io/" target="_blank">Lizhi Wang</a><sup>1</sup>, 
@@ -86,7 +86,8 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-          <p class="text-justify">Low-light raw image denoising plays a crucial role in mobile photography, and learning-based methods have become the mainstream approach. Training the learning-based methods with synthetic data emerges as an efficient and practical alternative to paired real data. However, the quality of synthetic data is inherently limited by the low accuracy of the noise model, which decreases the performance of low-light raw image denoising. In this paper, we develop a novel framework for accurate noise modeling that learns a physics-guided noise neural proxy (PNNP) from dark frames. PNNP integrates three efficient techniques: physics-guided noise decoupling (PND), physics-guided proxy model (PPM), and differentiable distribution-oriented loss (DDL). The PND decouples the dark frame into different components and handles different levels of noise in a flexible manner, which reduces the complexity of the noise neural proxy. The PPM incorporates physical priors to effectively constrain the generated noise, which promotes the accuracy of  the noise neural proxy. The DDL provides explicit and reliable supervision for noise modeling, which promotes the precision of the noise neural proxy. Extensive experiments on public low-light raw image denoising datasets and real low-light imaging scenarios demonstrate the superior performance of our PNNP framework.
+          <p class="text-justify">
+            In recent years, training with synthetic data has become the mainstream for practical low-light raw image denoising due to its low data requirements. Noise modeling, which focuses on characterizing the noise distribution of real-world sensors, profoundly influences the effectiveness and practicality of synthetic data.	Currently, physics-based noise modeling struggles to characterize the entire real noise distribution, while learning-based noise modeling impractically depends on paired real data. Some advanced methods integrate the physics-based approach into the learning-based approach. However, due to high data dependency, these integrations still face challenges in serving practical low-light raw image denoising. In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data, to break down the data dependency. Based on the proposed strategy, we introduce an efficient physics-guided noise neural proxy (PNNP) to approximate the real-world sensor noise model. Specifically, we integrate physical priors into neural proxies and introduce three efficient techniques: physics-guided noise decoupling (PND), physics-guided proxy model (PPM), and differentiable distribution loss (DDL). PND decouples the dark frame into different components and handles different levels of noise in a flexible manner, which reduces the complexity of noise modeling. PPM incorporates physical priors to constrain the generated noise, which promotes the accuracy of noise modeling. DDL provides explicit and reliable supervision for noise distribution, which promotes the precision of noise modeling. The low data dependency of PNNP exhibits its powerful potential for practical low-light raw image denoising. Extensive experiments on public datasets demonstrate the superiority of our PNNP.  
           </p>
           <!-- <img class="img-fluid" src="./images/pipeline.png" alt="teaser" width="90%"> -->
         </div>
@@ -109,7 +110,7 @@
             </p>
             <details><summary>Click to get details</summary>
             <br>
-            <h5>Public Datasets (ELD & SID)</h5>
+            <h5>ELD dataset and SID dataset</h5>
             <img class="img-fluid" src="./images/results_ELD.png" width="100%">
             <br><br>
             <img class="img-fluid" src="./images/results_SID.png" width="100%">
@@ -118,10 +119,12 @@
               Our method achieves the most exact color and clearest textures in the majority of scenarios in public datasets. Benefiting from accurate noise neural proxies, the corresponding denoising results are exempt from obvious residual noise and effectively remove various complex noises including fixed-pattern noise. 
             </p>
             <br>
-            <h5>Real Imaging Scenarios</h5>
-            <img class="img-fluid" src="./images/results_ours.png" width="100%">
+            <h5>LRID dataset</h5>
+            <img class="img-fluid" src="./images/results_tab_LRID.png" width="100%">
+            <br>  
+            <img class="img-fluid" src="./images/results_LRID.png" width="100%">
             </details>
-            <br>
+            <br>  
             <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Ablation Study</p>
             <h5>Quantitative Results</h5>
             <img class="img-fluid" src="./images/ablation_tab.png" >
@@ -147,7 +150,42 @@
   </section>
   <br>
 
-  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Discussion</h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Integration of Paired Real Data and Noise Modeling</p>
+            <h5>Quantitative Results</h5>
+            <img class="img-fluid" src="./images/discussion_Paired+NM_tab.png">  
+            <p class="text-justify"> Comparison of denoising performance among noise modeling methods trained with and without paired real data. </p>
+            <details><summary>Click to get details</summary>
+            <img class="img-fluid" src="./images/discussion_Paired+NM.png">
+            <br>
+            <br>
+            <p class="text-justify" style="font-family: Lato; font-size: x-large; font-weight: 500;">Data for Noise Modeling</p>
+            <p class="text-justify">
+              One important premise often overlooked in noise modeling research is that real data is always essential in practical noise modeling. 
+              Learning-based approaches depend on real data to train noise models, while physics-based methods utilize real data for calibrating noise parameters. Although noise modeling methods are generally applicable, the model parameters exhibit sensor-specific characteristics. Hence, a robust and practical noise modeling approach should address the inherent challenges associated with real data quality.
+              <br>
+              The quality of real data directly influences the quality of the resulting noise model. The overlook for data is particularly severe in learning-based noise modeling methods. 
+              The existing strategy of learning-based noise modeling, which involves learning the clean-to-noise mapping from paired real data, has several problems from a data perspective. 
+              This strategy heavily depends on large-scale high-quality paired real data, which is often challenging to obtain. 
+              On one side, underdeveloped data acquisition protocol often results in signal misalignment within the paired real data. 
+              On the other side, the coupling of excessive noise models within the paired real data makes it challenging for neural networks to accurately approximate the real-world sensor noise model. 
+              In summary, data defects hinder the performance of the existing learning-based noise modeling strategy in practical low-light scenarios.
+              <br>
+              Compared to learning-based noise modeling, physics-based noise modeling relies on real data collected by cameras specifically for calibration purposes, such as flat-field frames for calibrating signal-dependent noise and dark frames for calibrating signal-independent noise. The calibration process is independent of paired real data, eliminating signal misalignment. From the perspective of data dependency, the data required for physics-based noise modeling is easier to obtain and of higher quality compared to learning-based noise modeling. 
+              <br>
+              Based on these insights, we propose the strategy of learning the noise model from dark frames instead of paired real data. The data-centric perspective~\cite{data-centric} serves as the foundational principle guiding our analysis and problem-solving approach.
+            </p>
+            </details>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
   <!-- citing -->
   <!-- <div class="container">
