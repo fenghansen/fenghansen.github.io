@@ -100,7 +100,7 @@
                         <a href="https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ">Yuzhi Wang</a>,
                         <a href="https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ">Hua Huang</a>,
                         <br>
-                        <em>ACM MM, 2022 <strong>(Best Paper Runner-Up Award)</strong></em>
+                        <em>TPAMI, 2024 / ACM MM, 2022 <strong>(Best Paper Runner-Up Award)</strong></em>
                         <br>
                         <a href="https://arxiv.org/abs/2207.06103">Paper</a> /
                         <a href="https://github.com/megvii-research/PMN">Code</a> /
@@ -109,6 +109,47 @@
                         <p></p>
                         <p>We present a learnability enhancement strategy to reform paired real data according to noise modeling.
                           We demonstrate the superior performance of our methods on public datasets and our dataset in both quantitative results and visual quality.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr onmouseout="group_shift_stop()" onmouseover="group_shift_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id="PNNP" style="opacity: 0;">
+                                <img style="width:100%" src="images/Input.png" ></div>
+                            <img style="width:100%" src="images/PNNP.png" >
+                        </div>
+                        <script type="text/javascript">
+                            function group_shift_start() {
+                                document.getElementById('PNNP').style.opacity = "1";
+                            }
+
+                            function group_shift_stop() {
+                                document.getElementById('PNNP').style.opacity = "0";
+                            }
+
+                            group_shift_stop()
+                        </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://fenghansen.github.io/">
+                            <papertitle>Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising</papertitle>
+                        </a>
+                        <br>
+                        <strong>Hansen Feng</strong>,
+                        <a href="https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ">Lizhi Wang</a>,
+                        Yiqi Huang,
+                        <a href="https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ">Yuzhi Wang</a>,
+                        <a href="https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ">Hua Huang</a>,
+                        <br>
+                        <em>Under Review</em>
+                        <br>
+                        <a href="https://arxiv.org/abs/2310.09126">Paper (Old Version)</a> /
+                        <a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code (Eval. Only)</a> /
+                        <p></p>
+                        <p>In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. Based on the proposed strategy, we introduce an efficient physics-guided noise neural proxy (PNNP) to approximate the real-world sensor noise model.
+                            The low data dependency of PNNP exhibits its powerful potential for practical low-light raw image denoising. Extensive experiments on public datasets demonstrate the superiority of our PNNP.
                         </p>
                     </td>
                 </tr>
