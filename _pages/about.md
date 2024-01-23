@@ -43,8 +43,8 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 ***(Under Review)***
 
-<a href="https://arxiv.org/abs/2310.09126">Paper</a> /
-<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code (Eval. Only)</a>
+[![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=PNNP(TBD))](https://github.com/fenghansen/PNNP) |
+<a href="https://arxiv.org/abs/2310.09126">Paper</a>
 
 - In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. 
 - Based on the proposed strategy, we introduce an efficient physics-guided noise neural proxy (PNNP) to approximate the real-world sensor noise model.
@@ -65,11 +65,11 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 ***TPAMI, 2024***
 
-<a href="https://ieeexplore.ieee.org/abstract/document/10207751">Paper</a> /
-<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code</a> /
-<a href="https://fenghansen.github.io/publication/PMN">Project</a> / 
-[Chinese Note](https://zhuanlan.zhihu.com/p/651674070) / 
-<a href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl">Dataset</a> /
+[![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=PMN)](https://github.com/megvii-research/PMN/tree/TPAMI) |
+<a href="https://ieeexplore.ieee.org/abstract/document/10207751">Paper</a> |
+<a href="https://fenghansen.github.io/publication/PMN">Project</a> | 
+[Chinese Note](https://zhuanlan.zhihu.com/p/651674070) | 
+<a href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl">Dataset</a>
 
 - The limited data volume, complicated noise model, and underdeveloped data quality have constituted the learnability bottleneck of the data mapping between paired real data, which limits the performance of the learning-based method.
 - To break through the bottleneck, we introduce a learnability enhancement strategy including three efficient methods: shot noise augmentation (SNA), dark shading correction (DSC), and a developed image acquisition protocol with corresponding dataset (LRID).
@@ -89,7 +89,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 ***(Under Review)***
 
-<a href="https://arxiv.org/abs/2307.03992">Paper</a> /
+<a href="https://arxiv.org/abs/2307.03992">Paper</a> |
 <a href="https://github.com/Li-Tong-621/DMID">Code</a>
 
 - We present a novel strategy called the Diffusion Model for Image Denoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
@@ -109,11 +109,11 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 [Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-<a href="https://arxiv.org/abs/2207.06103">Paper</a> /
-<a href="https://github.com/megvii-research/PMN">Code</a> /
-<a href="https://fenghansen.github.io/publication/PMN">Project</a> / 
-[Chinese Note](https://zhuanlan.zhihu.com/p/544592330) / 
-<a href="https://www.bilibili.com/video/BV1pG411E7mE/">Video</a> /
+[![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=PMN)](https://github.com/megvii-research/PMN) |
+<a href="https://arxiv.org/abs/2207.06103">Paper</a> |
+<a href="https://fenghansen.github.io/publication/PMN">Project</a> | 
+[Chinese Note](https://zhuanlan.zhihu.com/p/544592330) | 
+<a href="https://www.bilibili.com/video/BV1pG411E7mE/">Video</a>
 
 - We present a learnability enhancement strategy to reform paired real data according to noise modeling.
 </div>
