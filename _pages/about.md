@@ -43,8 +43,8 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 ***(Under Review)***
 
-[![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=PNNP(TBD))](https://github.com/fenghansen/PNNP) |
-<a href="https://arxiv.org/abs/2310.09126">Paper</a>
+<a href="https://arxiv.org/abs/2310.09126">Paper</a> |
+<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code (Eval Only)</a>
 
 - In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. 
 - Based on the proposed strategy, we introduce an efficient physics-guided noise neural proxy (PNNP) to approximate the real-world sensor noise model.
@@ -65,8 +65,8 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 ***TPAMI, 2024***
 
-[![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=PMN)](https://github.com/megvii-research/PMN/tree/TPAMI) |
 <a href="https://ieeexplore.ieee.org/abstract/document/10207751">Paper</a> |
+<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code</a> |
 <a href="https://fenghansen.github.io/publication/PMN">Project</a> | 
 [Chinese Note](https://zhuanlan.zhihu.com/p/651674070) | 
 <a href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl">Dataset</a>
@@ -109,8 +109,8 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 [Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-[![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=PMN)](https://github.com/megvii-research/PMN) |
 <a href="https://arxiv.org/abs/2207.06103">Paper</a> |
+<a href="https://github.com/megvii-research/PMN">Code</a> |
 <a href="https://fenghansen.github.io/publication/PMN">Project</a> | 
 [Chinese Note](https://zhuanlan.zhihu.com/p/544592330) | 
 <a href="https://www.bilibili.com/video/BV1pG411E7mE/">Video</a>
@@ -120,13 +120,13 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 
 ## All Works
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Review)``
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Review)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
-- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Haoqiang Fan, Hua Huang. [Learnability Enhancement for Low-light Raw Image Denoising: A Data Perspective](https://ieeexplore.ieee.org/document/10207751). ``TPAMI 2024``
+- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Haoqiang Fan, Hua Huang. [Learnability Enhancement for Low-light Raw Image Denoising: A Data Perspective](https://ieeexplore.ieee.org/document/10207751). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
 
-- Tong Li, **Hansen Feng**, Lizhi Wang, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``(Under Review)``
+- Tong Li, **Hansen Feng**, Lizhi Wang, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``(Under Review)`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
-- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Hua Huang. [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103). ``ACMMM 2022`` <span style="color:red">(Best Paper Runner-Up Award)</span>
+- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Hua Huang. [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103). ``ACMMM 2022`` <span style="color:red">(Best Paper Runner-Up Award)</span> [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
 
 # 📖 Educations
 - *2020 ~ present*, Beijing Institute of Technology <a href="https://english.bit.edu.cn/">(BIT)</a>, Ph.D.
