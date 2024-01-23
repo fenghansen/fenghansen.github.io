@@ -137,3 +137,8 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 # 💻 Internships
 - *2021.03 - present*, [Megvii](https://www.megvii.com/), Research (IS)
 - *2020.07 - 2021.03*, [SenseTime](https://www.sensetime.com/), Research (ISP&Codec)
+
+# 🎖 Honors and Awards
+- Best Paper Runner-Up Award of the [ACM Multimedia 2022](https://2022.acmmm.org/best-paper-award/)
+- Outstanding Graduate of SAEE, University of Science and Technology Beijing, 2020
+- The First Prize of [NOIP 2011 (Beijing)](https://blog.sina.com.cn/s/blog_4ee63ce90102dwjd.html), Senior Group, 2011
