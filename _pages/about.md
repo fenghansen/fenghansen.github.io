@@ -1,0 +1,139 @@
+---
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
+
+I am currently a Ph.D. student at <a href="https://vmcl.bit.edu.cn/">VMCL</a> of <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>. 
+I am reaserching under the supervision of <a href="https://wang-lizhi.github.io/">A.P. Lizhi Wang</a>.
+Before joining BIT, I received my bachelor's degree from <a href="https://en.ustb.edu.cn/"> University of Science and Technology Beijing (USTB)</a> in 2020.
+
+
+# 🔥 News
+- *2023.08.03*: &nbsp;🎉🎉 Our paper ([PMN [J]](https://github.com/megvii-research/PMN/tree/TPAMI)) is accepted by **TPAMI**.
+- *2022.11.17*: &nbsp;🎉🎉 Our paper ([PMN [C]](https://github.com/megvii-research/PMN/)) win the <span style="color:red"> Best Paper Runner-Up Award</span> of **ACMMM 2022**.
+
+
+# 📝 Publications 
+## Representative Works
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/abs/2310.09126)
+
+**Hansen Feng**, 
+[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
+[Yiqi Huang](), 
+[Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
+[Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
+[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
+
+***(Under Review)***
+
+<a href="https://arxiv.org/abs/2310.09126">Paper</a> /
+<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code (Eval. Only)</a>
+
+- In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. 
+- Based on the proposed strategy, we introduce an efficient physics-guided noise neural proxy (PNNP) to approximate the real-world sensor noise model.
+- The low data dependency of PNNP exhibits its powerful potential for practical low-light raw image denoising. 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2024</div><img src='images/pipeline.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learnability Enhancement for Low-light Raw Denoising: A Data Perspective](https://ieeexplore.ieee.org/abstract/document/10207751)
+
+**Hansen Feng**, 
+[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
+[Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
+[Haoqiang Fan](https://scholar.google.com/citations?hl=zh-CN&user=bzzBut4AAAAJ), 
+[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
+
+***TPAMI, 2024***
+
+<a href="https://ieeexplore.ieee.org/abstract/document/10207751">Paper</a> /
+<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code</a> /
+<a href="https://fenghansen.github.io/publication/PMN">Project</a> / 
+[Chinese Note](https://zhuanlan.zhihu.com/p/651674070) / 
+<a href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl">Dataset</a> /
+
+- The limited data volume, complicated noise model, and underdeveloped data quality have constituted the learnability bottleneck of the data mapping between paired real data, which limits the performance of the learning-based method.
+- To break through the bottleneck, we introduce a learnability enhancement strategy including three efficient methods: shot noise augmentation (SNA), dark shading correction (DSC), and a developed image acquisition protocol with corresponding dataset (LRID).
+</div>
+</div>
+
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/DMID_pipeline.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992)
+
+[Tong Li](),
+**Hansen Feng**, 
+[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
+[Zhiwei Xiong](https://scholar.google.com/citations?hl=zh-CN&user=Snl0HPEAAAAJ), 
+[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
+
+***(Under Review)***
+
+<a href="https://arxiv.org/abs/2307.03992">Paper</a> /
+<a href="https://github.com/Li-Tong-621/DMID">Code</a>
+
+- We present a novel strategy called the Diffusion Model for Image Denoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
+- Our DMID strategy includes an adaptive embedding method that embeds the noisy image into a pre-trained unconditional diffusion model and an adaptive ensembling method that reduces distortion in the denoised image.
+</div>
+</div> -->
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM 2022</div><img src='images/2022Learnability_MM.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103)
+
+***ACMMM, 2022 <span style="color:red">(Best Paper Runner-Up Award)</span>***
+
+**Hansen Feng**, 
+[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
+[Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
+[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
+
+<a href="https://arxiv.org/abs/2207.06103">Paper</a> /
+<a href="https://github.com/megvii-research/PMN">Code</a> /
+<a href="https://fenghansen.github.io/publication/PMN">Project</a> / 
+[Chinese Note](https://zhuanlan.zhihu.com/p/544592330) / 
+<a href="https://www.bilibili.com/video/BV1pG411E7mE/">Video</a> /
+
+- We present a learnability enhancement strategy to reform paired real data according to noise modeling.
+</div>
+</div>
+
+## All Works
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Review)``
+
+- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Haoqiang Fan, Hua Huang. [Learnability Enhancement for Low-light Raw Image Denoising: A Data Perspective](https://ieeexplore.ieee.org/document/10207751). ``TPAMI 2024``
+
+- Tong Li, **Hansen Feng**, Lizhi Wang, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``(Under Review)``
+
+- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Hua Huang. [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103). ``ACMMM 2022`` <span style="color:red">(Best Paper Runner-Up Award)</span>
+
+# 📖 Educations
+- *2020 ~ present*, Beijing Institute of Technology <a href="https://english.bit.edu.cn/">(BIT)</a>, Ph.D.
+- *2016 ~ 2020*, University of Science and Technology Beijing <a href="https://en.ustb.edu.cn/">(USTB)</a>, Bechelor's Degree
+- *2010 ~ 2016*, High School Affiliated to Renmin University of China <a href="https://en.wikipedia.org/wiki/High_School_Affiliated_to_Renmin_University_of_China">(RDFZ)</a>, Middle School
+
+
+# 💻 Internships
+- *2021.03 - present*, [Megvii](https://www.megvii.com/), Research (IS)
+- *2020.07 - 2021.03*, [SenseTime](https://www.sensetime.com/), Research (ISP&Codec)
