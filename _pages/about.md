@@ -29,7 +29,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 # 📝 Publications 
 ## Representative Works
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Review</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/abs/2310.09126)
@@ -47,12 +47,12 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 <a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code (Eval Only)</a>
 
 - In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. 
-- Based on the proposed strategy, we introduce an efficient physics-guided noise neural proxy (PNNP) to approximate the real-world sensor noise model.
+- Based on the proposed strategy, we introduce an efficient **P**hysics-guided **N**oise **N**eural **P**roxy (PNNP) to approximate the real-world sensor noise model.
 - The low data dependency of PNNP exhibits its powerful potential for practical low-light raw image denoising. 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/DMID_pipeline.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">DMID | TPAMI 2024</div><img src='images/DMID_pipeline.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992)
@@ -67,15 +67,15 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 ***TPAMI, 2024***
 
 <a href="https://arxiv.org/abs/2307.03992">Paper</a> |
-<a href="https://github.com/Li-Tong-621/DMID">Code</a>
-<a href="https://zhuanlan.zhihu.com/p/639911080">Discussion (Zhihu)</a>
+<a href="https://github.com/Li-Tong-621/DMID">Code</a> |
+<a href="https://zhuanlan.zhihu.com/p/639911080">Chinese Note</a>
 
-- We present a novel strategy called the Diffusion Model for Image Denoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
+- We present a novel strategy called the **D**iffusion **M**odel for **I**mage **D**enoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
 - Our DMID strategy includes an adaptive embedding method that embeds the noisy image into a pre-trained unconditional diffusion model and an adaptive ensembling method that reduces distortion in the denoised image.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2024</div><img src='images/pipeline.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PMN[J] | TPAMI 2024</div><img src='images/pipeline.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Learnability Enhancement for Low-light Raw Denoising: A Data Perspective](https://ieeexplore.ieee.org/abstract/document/10207751)
@@ -95,11 +95,11 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 <a href="https://pan.baidu.com/s/1fXlb-Q_ofHOtVOufe5cwDg?pwd=vmcl">Dataset</a>
 
 - The limited data volume, complicated noise model, and underdeveloped data quality have constituted the learnability bottleneck of the data mapping between paired real data, which limits the performance of the learning-based method.
-- To break through the bottleneck, we introduce a learnability enhancement strategy including three efficient methods: shot noise augmentation (SNA), dark shading correction (DSC), and a developed image acquisition protocol with corresponding dataset (LRID).
+- To break through the bottleneck, we introduce a learnability enhancement strategy including three efficient methods: shot noise augmentation (SNA), dark shading correction (DSC), and a developed image acquisition protocol with corresponding **L**ow-light **R**aw **I**mage **D**enoising (LRID) dataset.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM 2022</div><img src='images/2022Learnability_MM.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PMN[C] | ACMMM 2022</div><img src='images/2022Learnability_MM.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103)
@@ -117,7 +117,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 [Chinese Note](https://zhuanlan.zhihu.com/p/544592330) | 
 <a href="https://www.bilibili.com/video/BV1pG411E7mE/">Video</a>
 
-- We present a learnability enhancement strategy to reform paired real data according to noise modeling.
+- We present a learnability enhancement strategy to reform paired real data according to noise modeling (PMN).
 </div>
 </div>
 
