@@ -52,6 +52,29 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/DMID_pipeline.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992)
+
+[Tong Li](),
+**Hansen Feng**, 
+[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
+[Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
+[Zhiwei Xiong](https://scholar.google.com/citations?hl=zh-CN&user=Snl0HPEAAAAJ), 
+[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
+
+***TPAMI, 2024***
+
+<a href="https://arxiv.org/abs/2307.03992">Paper</a> |
+<a href="https://github.com/Li-Tong-621/DMID">Code</a>
+<a href="https://zhuanlan.zhihu.com/p/639911080">Discussion (Zhihu)</a>
+
+- We present a novel strategy called the Diffusion Model for Image Denoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
+- Our DMID strategy includes an adaptive embedding method that embeds the noisy image into a pre-trained unconditional diffusion model and an adaptive ensembling method that reduces distortion in the denoised image.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2024</div><img src='images/pipeline.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -76,27 +99,6 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/DMID_pipeline.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992)
-
-[Tong Li](),
-**Hansen Feng**, 
-[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
-[Zhiwei Xiong](https://scholar.google.com/citations?hl=zh-CN&user=Snl0HPEAAAAJ), 
-[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
-
-***(Under Review)***
-
-<a href="https://arxiv.org/abs/2307.03992">Paper</a> |
-<a href="https://github.com/Li-Tong-621/DMID">Code</a>
-
-- We present a novel strategy called the Diffusion Model for Image Denoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
-- Our DMID strategy includes an adaptive embedding method that embeds the noisy image into a pre-trained unconditional diffusion model and an adaptive ensembling method that reduces distortion in the denoised image.
-</div>
-</div> -->
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM 2022</div><img src='images/2022Learnability_MM.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -120,11 +122,13 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 
 ## All Works
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [You Only Need a Denoiser: Breaking Data Dependency for Blind Raw Image Denoising](). ``(Under Review)`` 
+
 - **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Review)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
-- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Haoqiang Fan, Hua Huang. [Learnability Enhancement for Low-light Raw Image Denoising: A Data Perspective](https://ieeexplore.ieee.org/document/10207751). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
+- Tong Li, **Hansen Feng**, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
-- Tong Li, **Hansen Feng**, Lizhi Wang, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``(Under Review)`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
+- **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Haoqiang Fan, Hua Huang. [Learnability Enhancement for Low-light Raw Image Denoising: A Data Perspective](https://ieeexplore.ieee.org/document/10207751). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
 
 - **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Hua Huang. [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103). ``ACMMM 2022`` <span style="color:red">(Best Paper Runner-Up Award)</span> [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
 
@@ -135,7 +139,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 
 # 💻 Internships
-- *2021.03 - present*, [Megvii](https://www.megvii.com/), Research (IS)
+- *2021.03 - 2023.08*, [Megvii](https://www.megvii.com/), Research (IS)
 - *2020.07 - 2021.03*, [SenseTime](https://www.sensetime.com/), Research (ISP&Codec)
 
 # 🎖 Honors and Awards
