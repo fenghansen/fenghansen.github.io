@@ -31,7 +31,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 # 📝 Publications 
 ## Representative Works
 <!-- YOND -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Review</div><img src='images/YOND_teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">YOND | Under Review</div><img src='images/YOND_teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2310.09126)
@@ -55,7 +55,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 
 <!-- PNNP -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Review</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Major Revision</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/abs/2310.09126)
