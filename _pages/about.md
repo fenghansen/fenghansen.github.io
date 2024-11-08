@@ -23,12 +23,38 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 
 # 🔥 News
+- *2024.07.23*: &nbsp;🎉🎉 Our paper ([DMID](https://ieeexplore.ieee.org/document/10607932)) is accepted by **TPAMI**.
 - *2023.08.03*: &nbsp;🎉🎉 Our paper ([PMN [J]](https://github.com/megvii-research/PMN/tree/TPAMI)) is accepted by **TPAMI**.
 - *2022.11.17*: &nbsp;🎉🎉 Our paper ([PMN [C]](https://github.com/megvii-research/PMN/)) win the <span style="color:red"> Best Paper Runner-Up Award</span> of **ACMMM 2022**.
 
 
 # 📝 Publications 
 ## Representative Works
+<!-- YOND -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Review</div><img src='images/YOND_teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2310.09126)
+
+**Hansen Feng**, 
+[Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
+[Yiqi Huang](), 
+[Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
+[Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
+[Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
+
+***(Under Review)***
+
+<a href="https://fenghansen.github.io/">Paper (Comming Soon)</a> 
+
+- We introduce a novel blind raw image denoising method. With our method, an AWGN denoiser can generalize to various real raw data with a single training on synthetic datasets. We name our method YOND, as you need nothing else under our method, **Y**ou **O**nly **N**eed a **D**enoiser.
+- We propose a coarse-to-fine noise estimation, providing high precision in noise parameter estimation, which ensures robust denoising.
+- We propose an expectation-matched VST, exhibiting low error in VST expectation bias correction, which ensures the exact color of denoised images.
+- We design an SNR-guided denoiser, offering controllable raw AWGN denoising, allowing YOND to deliver clear denoised images under adaptive adjustment.
+</div>
+</div>
+
+<!-- PNNP -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Review</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -41,10 +67,12 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-***(Under Review)***
+***(Under Major Revision)***
 
 <a href="https://arxiv.org/abs/2310.09126">Paper</a> |
-<a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code (Eval Only)</a>
+<a href="https://github.com/fenghansen/PNNP">Code (Eval Only)</a> |
+<a href="https://fenghansen.github.io/publication/PNNP/">Project</a> |
+<a href="https://pan.baidu.com/s/1WMv2x7yqg0kMTBCddqkCLQ?pwd=vmcl">Results & Checkpoints</a>
 
 - In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. 
 - Based on the proposed strategy, we introduce an efficient **P**hysics-guided **N**oise **N**eural **P**roxy (PNNP) to approximate the real-world sensor noise model.
@@ -52,10 +80,11 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 </div>
 
+<!-- DMID -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">DMID | TPAMI 2024</div><img src='images/DMID_pipeline.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992)
+[Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://ieeexplore.ieee.org/document/10607932)
 
 [Tong Li](),
 **Hansen Feng**, 
@@ -75,6 +104,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 </div>
 
+<!-- PMN [J] -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PMN[J] | TPAMI 2024</div><img src='images/pipeline.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -86,7 +116,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 [Haoqiang Fan](https://scholar.google.com/citations?hl=zh-CN&user=bzzBut4AAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-***TPAMI, 2024***
+***TPAMI, 2023***
 
 <a href="https://ieeexplore.ieee.org/abstract/document/10207751">Paper</a> |
 <a href="https://github.com/megvii-research/PMN/tree/TPAMI">Code</a> |
@@ -99,6 +129,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 </div>
 
+<!-- PMN [C] -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PMN[C] | ACMMM 2022</div><img src='images/2022Learnability_MM.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
