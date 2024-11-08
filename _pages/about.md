@@ -39,18 +39,18 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 **Hansen Feng**, 
 [Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
 [Yiqi Huang](), 
-[Yuzhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=JzBbU18AAAAJ), 
+[Tong Li](), 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
 ***(Under Review)***
 
-<a href="https://fenghansen.github.io/">Paper (Comming Soon)</a> 
+<a href="">Paper (Comming Soon)</a> 
 
 - We introduce a novel blind raw image denoising method. With our method, an AWGN denoiser can generalize to various real raw data with a single training on synthetic datasets. We name our method YOND, as you need nothing else under our method, **Y**ou **O**nly **N**eed a **D**enoiser.
 - We propose a coarse-to-fine noise estimation, providing high precision in noise parameter estimation, which ensures robust denoising.
 - We propose an expectation-matched VST, exhibiting low error in VST expectation bias correction, which ensures the exact color of denoised images.
-- We design an SNR-guided denoiser, offering controllable raw AWGN denoising, allowing YOND to deliver clear denoised images under adaptive adjustment.
+- We propose an SNR-guided denoiser, offering controllable raw AWGN denoising, allowing YOND to deliver clear denoised images under adaptive adjustment.
 </div>
 </div>
 
@@ -155,9 +155,9 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 ## All Works
 - **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [You Only Need a Denoiser: Breaking Data Dependency for Blind Raw Image Denoising](). ``(Under Review)`` 
 
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Review)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Major Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
-- Tong Li, **Hansen Feng**, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
+- <u>Tong Li</u>, <u>**Hansen Feng**</u>, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
 - **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Haoqiang Fan, Hua Huang. [Learnability Enhancement for Low-light Raw Image Denoising: A Data Perspective](https://ieeexplore.ieee.org/document/10207751). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
 
