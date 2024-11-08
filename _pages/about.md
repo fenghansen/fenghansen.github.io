@@ -48,9 +48,8 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 <a href="">Paper (Comming Soon)</a> 
 
 - We introduce a novel blind raw image denoising method. With our method, an AWGN denoiser can generalize to various real raw data with a single training on synthetic datasets. We name our method YOND, as you need nothing else under our method, **Y**ou **O**nly **N**eed a **D**enoiser.
-- We propose a coarse-to-fine noise estimation, providing high precision in noise parameter estimation, which ensures robust denoising.
-- We propose an expectation-matched VST, exhibiting low error in VST expectation bias correction, which ensures the exact color of denoised images.
-- We propose an SNR-guided denoiser, offering controllable raw AWGN denoising, allowing YOND to deliver clear denoised images under adaptive adjustment.
+- YOND consists of three key modules: the coarse-to-fine noise estimation (CNE), the expectation-matched variance-stabilizing transform (EM-VST), and the SNR-guided denoiser (SNR-Net).
+- Extensive experiments across diverse camera datasets, along with flexible solutions for challenging cases, demonstrate the practicality of YOND.
 </div>
 </div>
 
