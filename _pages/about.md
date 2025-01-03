@@ -85,8 +85,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://ieeexplore.ieee.org/document/10607932)
 
-[Tong Li](),
-**Hansen Feng**, 
+<u>[Tong Li]()</u>, **<u>Hansen Feng</u>** 
 [Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Zhiwei Xiong](https://scholar.google.com/citations?hl=zh-CN&user=Snl0HPEAAAAJ), 
