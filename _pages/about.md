@@ -18,8 +18,10 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 I am currently a Ph.D. student at <a href="https://vmcl.bit.edu.cn/">VMCL</a> of <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>. 
-I am reaserching under the supervision of <a href="https://wang-lizhi.github.io/">A.P. Lizhi Wang</a>.
+I am reaserching under the supervision of <a href="https://wang-lizhi.github.io/">Prof. Lizhi Wang</a>. 
 Before joining BIT, I received my bachelor's degree from <a href="https://en.ustb.edu.cn/"> University of Science and Technology Beijing (USTB)</a> in 2020.
+
+Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to get my public technical blogs.
 
 
 # 🔥 News
@@ -34,12 +36,12 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">YOND | Under Review</div><img src='images/YOND_teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency]()
+[YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2506.03645)
 
 **Hansen Feng**, 
 [Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
 [Yiqi Huang](), 
-[Tong Li](), 
+[Tong Li](https://scholar.google.com/citations?hl=zh-CN&user=KANjABUAAAAJ), 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
@@ -54,7 +56,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 </div>
 
 <!-- PNNP -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | Under Major Revision</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | TPAMI Major Revision</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/abs/2310.09126)
@@ -66,7 +68,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-***(Under Major Revision)***
+***(TPAMI Major Revision)***
 
 <a href="https://arxiv.org/abs/2310.09126">Paper</a> |
 <a href="https://github.com/fenghansen/PNNP">Code (Eval Only)</a> |
@@ -85,7 +87,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 
 [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://ieeexplore.ieee.org/document/10607932)
 
-<u>[Tong Li]()</u>, **<u>Hansen Feng</u>** 
+<u>[Tong Li](https://scholar.google.com/citations?hl=zh-CN&user=KANjABUAAAAJ)</u>, **<u>Hansen Feng</u>** 
 [Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Zhiwei Xiong](https://scholar.google.com/citations?hl=zh-CN&user=Snl0HPEAAAAJ), 
@@ -94,8 +96,9 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 ***TPAMI, 2024***
 
 <a href="https://arxiv.org/abs/2307.03992">Paper</a> |
-<a href="https://github.com/Li-Tong-621/DMID">Code</a> |
-<a href="https://zhuanlan.zhihu.com/p/639911080">Chinese Note</a>
+<a href="https://github.com/Li-Tong-621/DMID">Code</a> | 
+<a href="https://zhuanlan.zhihu.com/p/1898420817429262557">Chinese Note (Tong Li)</a> |
+<a href="https://zhuanlan.zhihu.com/p/639911080">Chinese Note (Hansen)</a>
 
 - We present a novel strategy called the **D**iffusion **M**odel for **I**mage **D**enoising (DMID) by understanding and rethinking the diffusion model from a denoising perspective.
 - Our DMID strategy includes an adaptive embedding method that embeds the noisy image into a pre-trained unconditional diffusion model and an adaptive ensembling method that reduces distortion in the denoised image.
@@ -153,7 +156,7 @@ Before joining BIT, I received my bachelor's degree from <a href="https://en.ust
 ## All Works
 - **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](). ``(Under Review)`` 
 
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Under Major Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Major Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
 - <u>Tong Li</u>, **<u>Hansen Feng</u>**, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
