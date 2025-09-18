@@ -17,23 +17,23 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Ph.D. student at <a href="https://vmcl.bit.edu.cn/">VMCL</a> of <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>. 
+I am currently a Ph.D. student at <a href="https://vmcl.bit.edu.cn/">VMCL group</a> of <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>. 
 I am reaserching under the supervision of <a href="https://wang-lizhi.github.io/">Prof. Lizhi Wang</a>. 
 Before joining BIT, I received my bachelor's degree from <a href="https://en.ustb.edu.cn/"> University of Science and Technology Beijing (USTB)</a> in 2020.
 
 Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to get my public technical blogs.
 
-
+*I plan to follow my advisor, <a href="https://wang-lizhi.github.io/">Prof. Lizhi Wang</a>, to join the <a href="https://vmcl.bnu.edu.cn/">VMCL group</a> at <a href="https://english.bnu.edu.cn/">Beijing Normal University</a> as a postdoctoral researcher. We welcome collaborations from both academic and industrial partners. Please feel free to reach out to us through the lab.*
 # 🔥 News
+- *2025.08.29*: &nbsp;⭐⭐ We have launched an online demo on [Hugging Face Space](https://huggingface.co/spaces/hansen97/YOND)! Explore [**YOND** (You Only Need a Denoiser)](https://arxiv.org/abs/2506.03645), our practical blind raw image denoising method.
 - *2024.07.23*: &nbsp;🎉🎉 Our paper ([DMID](https://ieeexplore.ieee.org/document/10607932)) is accepted by **TPAMI**.
 - *2023.08.03*: &nbsp;🎉🎉 Our paper ([PMN [J]](https://github.com/megvii-research/PMN/tree/TPAMI)) is accepted by **TPAMI**.
 - *2022.11.17*: &nbsp;🎉🎉 Our paper ([PMN [C]](https://github.com/megvii-research/PMN/)) win the <span style="color:red"> Best Paper Runner-Up Award</span> of **ACMMM 2022**.
 
 
-# 📝 Publications 
-## Representative Works
+# ⭐Representative Works
 <!-- YOND -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">YOND | Under Review</div><img src='images/YOND_teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">YOND | TPAMI Minor Revision</div><img src='images/YOND_teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2506.03645)
@@ -45,9 +45,12 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-***(Under Review)***
+***(TPAMI Minor Revision)***
 
-<a href="">Paper (Comming Soon)</a> 
+<a href="https://arxiv.org/abs/2506.03645">Paper</a> | 
+<a href="https://huggingface.co/spaces/hansen97/YOND">Online Demo</a> | 
+<a href="https://github.com/fenghansen/YOND_public">Code (Eval Only)</a> | 
+<a href="https://fenghansen.github.io/publication/YOND">Project</a>
 
 - We introduce a novel blind raw image denoising method. With our method, an AWGN denoiser can generalize to various real raw data with a single training on synthetic datasets. We name our method YOND, as you need nothing else under our method, **Y**ou **O**nly **N**eed a **D**enoiser.
 - YOND consists of three key modules: the coarse-to-fine noise estimation (CNE), the expectation-matched variance-stabilizing transform (EM-VST), and the SNR-guided denoiser (SNR-Net).
@@ -153,10 +156,10 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 </div>
 </div>
 
-## All Works
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](). ``(Under Review)`` 
+# 📝 Publications
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2506.03645). ``(TPAMI Minor Revision)`` [![](https://img.shields.io/github/stars/fenghansen/YOND_public?style=social&label=Stars)](https://github.com/fenghansen/YOND_public) [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/hansen97/YOND)
 
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(Major Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(TPAMI Major Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
 - <u>Tong Li</u>, **<u>Hansen Feng</u>**, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
@@ -165,12 +168,13 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 - **Hansen Feng**, Lizhi Wang, Yuzhi Wang, Hua Huang. [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103). ``ACMMM 2022`` <span style="color:red">(Best Paper Runner-Up Award)</span> [![](https://img.shields.io/github/stars/megvii-research/PMN?style=social&label=Stars)](https://github.com/megvii-research/PMN)
 
 # 📖 Educations
-- *2020 ~ present*, Beijing Institute of Technology <a href="https://english.bit.edu.cn/">(BIT)</a>, Ph.D.
+- *2020 ~ 2026*, Beijing Institute of Technology <a href="https://english.bit.edu.cn/">(BIT)</a>, Ph.D.
 - *2016 ~ 2020*, University of Science and Technology Beijing <a href="https://en.ustb.edu.cn/">(USTB)</a>, Bechelor's Degree
 - *2010 ~ 2016*, High School Affiliated to Renmin University of China <a href="https://en.wikipedia.org/wiki/High_School_Affiliated_to_Renmin_University_of_China">(RDFZ)</a>, Middle School
 
 
 # 💻 Internships
+- *2024.05 - present*, [Axera](https://axera-tech.com/), Research (AI-ISP)
 - *2021.03 - 2023.08*, [Megvii](https://www.megvii.com/), Research (IS)
 - *2020.07 - 2021.03*, [SenseTime](https://www.sensetime.com/), Research (ISP&Codec)
 
