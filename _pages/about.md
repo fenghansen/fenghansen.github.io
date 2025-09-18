@@ -90,7 +90,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 
 [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://ieeexplore.ieee.org/document/10607932)
 
-<u>[Tong Li](https://scholar.google.com/citations?hl=zh-CN&user=KANjABUAAAAJ)</u>, **<u>Hansen Feng</u>** 
+[<u>Tong Li</u>](https://scholar.google.com/citations?hl=zh-CN&user=KANjABUAAAAJ), **<u>Hansen Feng</u>**, 
 [Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Zhiwei Xiong](https://scholar.google.com/citations?hl=zh-CN&user=Snl0HPEAAAAJ), 
