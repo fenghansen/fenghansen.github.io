@@ -59,7 +59,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 </div>
 
 <!-- PNNP -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | TPAMI Major Revision</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | TPAMI Minor Revision</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/abs/2310.09126)
@@ -71,7 +71,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-***(TPAMI Major Revision)***
+***(TPAMI Minor Revision)***
 
 <a href="https://arxiv.org/abs/2310.09126">Paper</a> |
 <a href="https://github.com/fenghansen/PNNP">Code (Eval Only)</a> |
@@ -159,7 +159,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 # 📝 Publications
 - **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2506.03645). ``(TPAMI Minor Revision)`` [![](https://img.shields.io/github/stars/fenghansen/YOND_public?style=social&label=Stars)](https://github.com/fenghansen/YOND_public) [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/hansen97/YOND)
 
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(TPAMI Major Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(TPAMI Minor Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
 - <u>Tong Li</u>, **<u>Hansen Feng</u>**, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
