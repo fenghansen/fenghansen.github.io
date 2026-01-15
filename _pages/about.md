@@ -25,11 +25,11 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 
 *I plan to follow my advisor, <a href="https://wang-lizhi.github.io/">Prof. Lizhi Wang</a>, to join the <a href="https://vmcl.bnu.edu.cn/">VMCL group</a> at <a href="https://english.bnu.edu.cn/">Beijing Normal University</a> as a postdoctoral researcher. We welcome collaborations from both academic and industrial partners. Please feel free to reach out to us through the lab.*
 # 🔥 News
-- *2026.01.12*: &nbsp;🎉🎉 Our paper ([PNNP](https://ieeexplore.ieee.org/document/11342300)) is accepted by **TPAMI**.
+- *2026.01.12*: &nbsp;🎉🎉 Our paper [PNNP](https://ieeexplore.ieee.org/document/11342300) is accepted by **TPAMI**.
 - *2025.08.29*: &nbsp;⭐⭐ We have launched an online demo on [Hugging Face Space](https://huggingface.co/spaces/hansen97/YOND)! Explore [**YOND** (You Only Need a Denoiser)](https://arxiv.org/abs/2506.03645), our practical blind raw image denoising method.
-- *2024.07.23*: &nbsp;🎉🎉 Our paper ([DMID](https://ieeexplore.ieee.org/document/10607932)) is accepted by **TPAMI**.
-- *2023.08.03*: &nbsp;🎉🎉 Our paper ([PMN [J]](https://github.com/megvii-research/PMN/tree/TPAMI)) is accepted by **TPAMI**.
-- *2022.11.17*: &nbsp;🎉🎉 Our paper ([PMN [C]](https://github.com/megvii-research/PMN/)) win the <span style="color:red"> Best Paper Runner-Up Award</span> of **ACMMM 2022**.
+- *2024.07.23*: &nbsp;🎉🎉 Our paper [DMID](https://ieeexplore.ieee.org/document/10607932) is accepted by **TPAMI**.
+- *2023.08.03*: &nbsp;🎉🎉 Our paper [PMN[J]](https://github.com/megvii-research/PMN/tree/TPAMI) is accepted by **TPAMI**.
+- *2022.11.17*: &nbsp;🎉🎉 Our paper [PMN[C]](https://github.com/megvii-research/PMN/) win the <span style="color:red"> Best Paper Runner-Up Award</span> of **ACMMM 2022**.
 
 
 # ⭐Representative Works
@@ -161,7 +161,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 # 📝 Publications
 - **Hansen Feng**, Lizhi Wang, Yiqi Huang, Tong Li, Lin Zhu, Hua Huang. [YOND: Practical Blind Raw Image Denoising Free from Camera-Specific Data Dependency](https://arxiv.org/abs/2506.03645). ``(TPAMI Minor Revision)`` [![](https://img.shields.io/github/stars/fenghansen/YOND_public?style=social&label=Stars)](https://github.com/fenghansen/YOND_public) [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/hansen97/YOND)
 
-- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``(TPAMI Minor Revision)`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
+- **Hansen Feng**, Lizhi Wang, Yiqi Huang, Yuzhi Wang, Lin Zhu, Hua Huang. [Learning Physics-Informed Noise Models from Dark Frames for Low-Light Raw Image Denoising](https://arxiv.org/pdf/2310.09126). ``TPAMI 2026`` [![](https://img.shields.io/github/stars/fenghansen/PNNP?style=social&label=Stars)](https://github.com/fenghansen/PNNP)
 
 - <u>Tong Li</u>, **<u>Hansen Feng</u>**, Lizhi Wang, Lin Zhu, Zhiwei Xiong, Hua Huang. [Stimulating the Diffusion Model for Image Denoising via Adaptive Embedding and Ensembling](https://arxiv.org/abs/2307.03992). ``TPAMI 2024`` [![](https://img.shields.io/github/stars/Li-Tong-621/DMID?style=social&label=Stars)](https://github.com/Li-Tong-621/DMID)
 
