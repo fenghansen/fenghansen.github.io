@@ -25,6 +25,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 
 *I plan to follow my advisor, <a href="https://wang-lizhi.github.io/">Prof. Lizhi Wang</a>, to join the <a href="https://vmcl.bnu.edu.cn/">VMCL group</a> at <a href="https://english.bnu.edu.cn/">Beijing Normal University</a> as a postdoctoral researcher. We welcome collaborations from both academic and industrial partners. Please feel free to reach out to us through the lab.*
 # 🔥 News
+- *2026.01.12*: &nbsp;🎉🎉 Our paper ([PNNP](https://ieeexplore.ieee.org/document/11342300)) is accepted by **TPAMI**.
 - *2025.08.29*: &nbsp;⭐⭐ We have launched an online demo on [Hugging Face Space](https://huggingface.co/spaces/hansen97/YOND)! Explore [**YOND** (You Only Need a Denoiser)](https://arxiv.org/abs/2506.03645), our practical blind raw image denoising method.
 - *2024.07.23*: &nbsp;🎉🎉 Our paper ([DMID](https://ieeexplore.ieee.org/document/10607932)) is accepted by **TPAMI**.
 - *2023.08.03*: &nbsp;🎉🎉 Our paper ([PMN [J]](https://github.com/megvii-research/PMN/tree/TPAMI)) is accepted by **TPAMI**.
@@ -59,10 +60,10 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 </div>
 
 <!-- PNNP -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | TPAMI Minor Revision</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PNNP | TPAMI 2026</div><img src='images/PNNP_example.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Physics-guided Noise Neural Proxy for Practical Low-light Raw Image Denoising](https://arxiv.org/abs/2310.09126)
+[Learning Physics-Informed Noise Models from Dark Frames for Low-Light Raw Image Denoising](https://doi.org/10.1109/TPAMI.2026.3651447)
 
 **Hansen Feng**, 
 [Lizhi Wang](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
@@ -71,15 +72,16 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 [Lin Zhu](https://scholar.google.com/citations?hl=zh-CN&user=32d6xfEAAAAJ), 
 [Hua Huang](https://scholar.google.com/citations?hl=zh-CN&user=EplUB7oAAAAJ)
 
-***(TPAMI Minor Revision)***
+***TPAMI 2026***
 
-<a href="https://arxiv.org/abs/2310.09126">Paper</a> |
+<a href="https://doi.org/10.1109/TPAMI.2026.3651447">Paper</a> |
+<a href="https://arxiv.org/abs/2310.09126">Arxiv</a> | 
 <a href="https://github.com/fenghansen/PNNP">Code (Eval Only)</a> |
 <a href="https://fenghansen.github.io/publication/PNNP/">Project</a> |
 <a href="https://pan.baidu.com/s/1WMv2x7yqg0kMTBCddqkCLQ?pwd=vmcl">Results & Checkpoints</a>
 
 - In this paper, we propose a novel strategy: learning the noise model from dark frames instead of paired real data. 
-- Based on the proposed strategy, we introduce an efficient **P**hysics-guided **N**oise **N**eural **P**roxy (PNNP) to approximate the real-world sensor noise model.
+- Based on the proposed strategy, we introduce an efficient **P**hysics-informed **N**oise **N**eural **P**roxy (PNNP) to approximate the real-world sensor noise model.
 - The low data dependency of PNNP exhibits its powerful potential for practical low-light raw image denoising. 
 </div>
 </div>
