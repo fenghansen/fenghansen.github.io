@@ -176,7 +176,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 
 
 # 💻 Internships
-- *2024.05 - present*, [Axera](https://axera-tech.com/), Research (AI-ISP)
+<!-- - *2024.05 - present*, [Axera](https://axera-tech.com/), Research (AI-ISP) -->
 - *2021.03 - 2023.08*, [Megvii](https://www.megvii.com/), Research (IS)
 - *2020.07 - 2021.03*, [SenseTime](https://www.sensetime.com/), Research (ISP&Codec)
 
