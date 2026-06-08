@@ -22,8 +22,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Hansen Feng"
-  avatar           : "images/fenghansen.jpg"
+  avatar           : "images/fenghansen.png"
   bio              : "计算机幻觉炼丹师, INTP, ACG爱好者, 北理计算机直博在读"
+  bio_en           : "Computer Vision Researcher, INTP, ACG enthusiast, Ph.D. candidate at BIT"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
