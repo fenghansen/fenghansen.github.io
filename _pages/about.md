@@ -221,7 +221,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 - *2025.08.29*: &nbsp;⭐⭐ 我们在 [Hugging Face Space](https://huggingface.co/spaces/hansen97/YOND) 上线了在线演示！欢迎体验我们的实用Raw图像盲去噪方法 [**YOND** (You Only Need a Denoiser)](https://arxiv.org/abs/2506.03645)。
 - *2024.07.23*: &nbsp;🎉🎉 我们的论文 [DMID](https://ieeexplore.ieee.org/document/10607932) 被 **TPAMI** 接收。
 - *2023.08.03*: &nbsp;🎉🎉 我们的论文 [PMN[J]](https://github.com/megvii-research/PMN/tree/TPAMI) 被 **TPAMI** 接收。
-- *2022.11.17*: &nbsp;🎉🎉 我们的论文 [PMN[C]](https://github.com/megvii-research/PMN/) 荣获 **ACMMM 2022** <span style="color:red">最佳论文 runner-up 奖</span>。
+- *2022.11.17*: &nbsp;🎉🎉 我们的论文 [PMN[C]](https://github.com/megvii-research/PMN/) 荣获 **ACMMM 2022** <span style="color:red">最佳论文候选（Best Paper Runner-Up Award）</span>。
 
 
 <span class='anchor' id='representative-works-zh'></span>
@@ -335,7 +335,7 @@ Welcome to visit <a href="https://vmcl-isp.site/">https://vmcl-isp.site/</a> to 
 
 [Learnability Enhancement for Low-light Raw Denoising: Where Paired Real Data Meets Noise Modeling](https://arxiv.org/abs/2207.06103)
 
-***ACMMM, 2022 <span style="color:red">(最佳论文候选奖)</span>***
+***ACMMM, 2022 <span style="color:red">(最佳论文候选)</span>***
 
 **冯汉森**, 
 [王立志](https://scholar.google.com/citations?hl=zh-CN&user=FEprmwYAAAAJ), 
